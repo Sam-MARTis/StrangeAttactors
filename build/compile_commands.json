@@ -1,0 +1,44 @@
+[
+{
+  "directory": "/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/build",
+  "command": "/usr/bin/c++ -DMODEL_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/resources/models/\\\" -DSHADER_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/shaders/\\\" -DTEXTURE_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/resources/textures/\\\" -I/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include -std=gnu++17 -o CMakeFiles/OpenGLProject.dir/src/aux.cpp.o -c /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/aux.cpp",
+  "file": "/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/aux.cpp",
+  "output": "CMakeFiles/OpenGLProject.dir/src/aux.cpp.o"
+},
+{
+  "directory": "/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/build",
+  "command": "/usr/bin/c++ -DMODEL_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/resources/models/\\\" -DSHADER_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/shaders/\\\" -DTEXTURE_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/resources/textures/\\\" -I/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include -std=gnu++17 -o CMakeFiles/OpenGLProject.dir/src/display-objects.cpp.o -c /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/display-objects.cpp",
+  "file": "/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/display-objects.cpp",
+  "output": "CMakeFiles/OpenGLProject.dir/src/display-objects.cpp.o"
+},
+{
+  "directory": "/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/build",
+  "command": "/usr/bin/cc -DMODEL_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/resources/models/\\\" -DSHADER_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/shaders/\\\" -DTEXTURE_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/resources/textures/\\\" -I/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include  -o CMakeFiles/OpenGLProject.dir/src/glad.c.o -c /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/glad.c",
+  "file": "/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/glad.c",
+  "output": "CMakeFiles/OpenGLProject.dir/src/glad.c.o"
+},
+{
+  "directory": "/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/build",
+  "command": "/usr/bin/c++ -DMODEL_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/resources/models/\\\" -DSHADER_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/shaders/\\\" -DTEXTURE_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/resources/textures/\\\" -I/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include -std=gnu++17 -o CMakeFiles/OpenGLProject.dir/src/main.cpp.o -c /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/main.cpp",
+  "file": "/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/main.cpp",
+  "output": "CMakeFiles/OpenGLProject.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/build",
+  "command": "/usr/bin/c++ -DMODEL_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/resources/models/\\\" -DSHADER_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/shaders/\\\" -DTEXTURE_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/resources/textures/\\\" -I/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include -std=gnu++17 -o CMakeFiles/OpenGLProject.dir/src/particles.cpp.o -c /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/particles.cpp",
+  "file": "/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/particles.cpp",
+  "output": "CMakeFiles/OpenGLProject.dir/src/particles.cpp.o"
+},
+{
+  "directory": "/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/build",
+  "command": "/usr/bin/c++ -DMODEL_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/resources/models/\\\" -DSHADER_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/shaders/\\\" -DTEXTURE_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/resources/textures/\\\" -I/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include -std=gnu++17 -o CMakeFiles/OpenGLProject.dir/src/processing-objects.cpp.o -c /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/processing-objects.cpp",
+  "file": "/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/processing-objects.cpp",
+  "output": "CMakeFiles/OpenGLProject.dir/src/processing-objects.cpp.o"
+},
+{
+  "directory": "/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/build",
+  "command": "/usr/bin/c++ -DMODEL_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/resources/models/\\\" -DSHADER_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/shaders/\\\" -DTEXTURE_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/resources/textures/\\\" -I/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include -std=gnu++17 -o CMakeFiles/OpenGLProject.dir/src/shaders.cpp.o -c /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/shaders.cpp",
+  "file": "/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/shaders.cpp",
+  "output": "CMakeFiles/OpenGLProject.dir/src/shaders.cpp.o"
+}
+]

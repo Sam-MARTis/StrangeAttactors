@@ -1,0 +1,84 @@
+#version 460 core
+layout(local_size_x = 256, local_size_y = 1, local_size_z = 1) in;
+
+struct Particle{
+    vec4 position;
+    vec4 velocity;
+};
+
+layout(std430, binding=0) buffer ParticleBuffer{
+    Particle particles[];
+};
+
+uniform float deltaTime;
+uniform uint maxParticles;
+
+
+vec3 lorenz_second_derivative(vec3 pos){
+    return vec3(
+        380*pos.x - 10*pos.x*pos.z - 110*pos.y,
+        281*pos.y - 308*pos.x - 10*pos.y*pos.z + 41*pos.x*pos.z/3 - pos.x*pos.x*pos.y,
+        10*pos.y*pos.y - 41*pos.x*pos.y/3 + 28*pos.x*pos.x - pos.x*pos.x*pos.z + 64*pos.z/9
+    );
+
+}
+vec3 lorenz(vec3 p){
+    return vec3(
+        10.0f * (p.y - p.x),
+        p.x * (28.0f - p.z) - p.y,
+        p.x * p.y - (8.0f / 3.0f) * p.z
+    );
+}
+
+vec3 rk4_lorenz(vec3 p, float dt){
+    vec3 k1 = lorenz(p);
+    vec3 k2 = lorenz(p + 0.5f * dt * k1);
+    vec3 k3 = lorenz(p + 0.5f * dt * k2);
+    vec3 k4 = lorenz(p + dt * k3);
+    return p + (dt / 6.0f) * (k1 + 2.0f*k2 + 2.0f*k3 + k4);
+}
+
+
+vec3 halvorsen(vec3 p, float alpha){
+    return vec3(
+        -alpha * p.x - 4.0f * p.y - 4.0f * p.z - p.y * p.y,
+        -alpha * p.y - 4.0f * p.z - 4.0f * p.x - p.z * p.z,
+        -alpha * p.z - 4.0f * p.x - 4.0f * p.y - p.x * p.x
+    );
+}
+
+vec3 rk4_halvorsen(vec3 p, float alpha, float dt){
+    vec3 k1 = halvorsen(p, alpha);
+    vec3 k2 = halvorsen(p + 0.5f * dt * k1, alpha);
+    vec3 k3 = halvorsen(p + 0.5f * dt * k2, alpha);
+    vec3 k4 = halvorsen(p + dt * k3, alpha);
+    return p + (dt / 6.0f) * (k1 + 2.0f*k2 + 2.0f*k3 + k4);
+}
+
+vec3 fourWing(vec3 p){
+    return vec3(
+        0.2f * p.x + p.y * p.z,
+        0.01f * p.x - 0.4f * p.y - p.x * p.z,
+        -p.z - p.x * p.y
+    );
+}
+
+vec3 rk4_fourWing(vec3 p, float dt){
+    vec3 k1 = fourWing(p);
+    vec3 k2 = fourWing(p + 0.5f * dt * k1);
+    vec3 k3 = fourWing(p + 0.5f * dt * k2);
+    vec3 k4 = fourWing(p + dt * k3);
+    return p + (dt / 6.0f) * (k1 + 2.0f*k2 + 2.0f*k3 + k4);
+}
+
+void main(){
+    uint index = gl_GlobalInvocationID.x;
+    if(index >= maxParticles) return;
+
+    Particle p = particles[index];
+    p.position.xyz = rk4_lorenz(p.position.xyz, deltaTime);
+    // p.position.xyz = rk4_halvorsen(p.position.xyz, 1.4, deltaTime);
+    // p.position.xyz = rk4_fourWing(p.position.xyz, deltaTime);
+
+    particles[index] = p;
+}

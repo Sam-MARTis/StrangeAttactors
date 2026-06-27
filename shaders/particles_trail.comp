@@ -1,0 +1,33 @@
+#version 460 core
+layout(local_size_x = 256, local_size_y = 1, local_size_z = 1) in;
+
+uniform uint frameCount;
+uniform uint maxParticles;
+uniform uint trailHistoryLength;
+
+
+struct Particle{
+    vec4 position;
+    vec4 velocity;
+};
+
+
+layout(std430, binding=0) buffer ParticleBuffer{
+    Particle particles[];
+};
+
+layout(std430, binding = 1) buffer TrailHistoryBuffer {
+    vec4 trailHistory[];
+};
+
+
+
+
+void main(){
+    uint index = gl_GlobalInvocationID.x;
+    if (index >= maxParticles) return;
+    uint head = frameCount % trailHistoryLength;
+    uint ssboIndex = index * trailHistoryLength + head;
+    trailHistory[ssboIndex] = particles[index].position;
+}
+
