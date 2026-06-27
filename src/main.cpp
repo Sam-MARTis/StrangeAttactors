@@ -38,11 +38,13 @@ int main()
 {
     
 
-    glm::vec3 cameraPos = glm::vec3(0.0f, 0.0f, 5.0f);
+    // glm::vec3 cameraPos = lorenz_centroid + glm::vec3(0.0f, 0.0f, 105.0f);
+    // data_in.cam->pos = glm::vec3(-10.0f, -5.0f, 35.0f);
+    glm::vec3 cameraPos = glm::vec3(-10.0f, -5.0f, 35.0f);
     glm::vec3 cameraFront = glm::vec3(0.0f, 0.0f, -1.0f);
     glm::vec3 cameraUp = glm::vec3(0.0f, 1.0f, 0.0f);
     glm::vec3 objectPos = glm::vec3(0.0f, 0.0f, -1.0f);
-    float fov = 65.0f;
+    float fov = 45.0f;
     float AR = (float)SCREEN_WIDTH / (float)SCREEN_HEIGHT;
     float min_view_dist = 0.1f;
     float max_view_dist = 250.f;
@@ -155,7 +157,9 @@ if(!glNamedBufferStorage)
     glm::vec2 posBounds(-2.0f, 2.0f);
     glm::vec2 zBounds(-13.0f, -11.5f);
     glm::vec2 velBounds(0.5f, 0.8f);
-    Particle* particles = initializeRandomParticles(MAX_PARTICLES, posBounds, posBounds, zBounds, velBounds, velBounds, velBounds);
+    // Particle* particles = initializeRandomParticles(MAX_PARTICLES, posBounds, posBounds, zBounds);
+    // Particle* particles = initializeRandomParticlesCentroids(MAX_PARTICLES, lorenz_centroid, lorenz_half_scale);
+    Particle* particles = initializeRandomParticlesCentroids(MAX_PARTICLES, halvorsen_centroid, halvorsen_half_scale);
     
     unsigned int dispatch_sizes[3] = {int(ceil(MAX_PARTICLES/256)), 1, 1};
     particlesComputeShader.setExecutionParameters(dispatch_sizes, GL_SHADER_STORAGE_BARRIER_BIT);
@@ -168,18 +172,17 @@ if(!glNamedBufferStorage)
     if(err != GL_NO_ERROR)
         std::cout << "GL Error at " << label << ": " << err << std::endl;
     };
-
+    
     glCreateBuffers(1, &SSBO);                                                          
     glNamedBufferStorage(SSBO, sizeof(Particle)*MAX_PARTICLES, particles, GL_DYNAMIC_STORAGE_BIT); 
-    
     glCreateVertexArrays(1, &particleVAO);  
-
+    
     // glVertexArrayVertexBuffer(particleVAO, 0, SSBO, 0, sizeof(Particle));               
     // glVertexArrayAttribFormat(particleVAO, 0, 4, GL_FLOAT, GL_FALSE, offsetof(Particle, position));
     // glVertexArrayAttribBinding(particleVAO, 0, 0);
     // glEnableVertexArrayAttrib(particleVAO, 0);                                          
     glBindBufferBase(GL_SHADER_STORAGE_BUFFER, 0, SSBO);
-
+    
     
     std::vector<glm::vec4> trailHistory(MAX_PARTICLES*TRAIL_HISTORY_LENGTH);
     for(int i=0; i<MAX_PARTICLES; i++){
@@ -191,7 +194,7 @@ if(!glNamedBufferStorage)
     glCreateBuffers(1, &trailHistorySSBO);
     glNamedBufferStorage(trailHistorySSBO, sizeof(glm::vec4)*MAX_PARTICLES*TRAIL_HISTORY_LENGTH, trailHistory.data(), 0);
     glBindBufferBase(GL_SHADER_STORAGE_BUFFER, 1, trailHistorySSBO);
-
+    
     struct CommandBuffer{
         unsigned int count;
         unsigned int primCount;
@@ -209,48 +212,58 @@ if(!glNamedBufferStorage)
     glCreateBuffers(1, &cmdBufferSSBO);
     glNamedBufferStorage(cmdBufferSSBO, sizeof(CommandBuffer)*MAX_PARTICLES, cmdBuffer.data(), 0);
     glBindBufferBase(GL_SHADER_STORAGE_BUFFER, 2, cmdBufferSSBO);
-
-
+    
+    
     struct CameraInformation{
-    glm::mat4 projection;
-    glm::mat4 view;
-    glm::vec3 cameraPos;
-    float padding0;
-    glm::vec3 cameraFront;
-    float padding1;
+        glm::mat4 projection;
+        glm::mat4 view;
+        glm::vec3 cameraPos;
+        float padding0;
+        glm::vec3 cameraFront;
+        float padding1;
     };
-
+    
     CameraInformation camInfo;
     camInfo.projection = cam.getProjectionMatrix();
     camInfo.view = cam.getViewMatrix();
     camInfo.cameraPos = cam.pos;
     camInfo.cameraFront = cam.front;
-
-
+    
+    
     unsigned int cameraUBO;
     glCreateBuffers(1, &cameraUBO);
     glNamedBufferStorage(cameraUBO, sizeof(CameraInformation), &camInfo, GL_DYNAMIC_STORAGE_BIT);
     glBindBufferBase(GL_UNIFORM_BUFFER, 0, cameraUBO);
-
-
+    
+    
     glEnable(GL_PROGRAM_POINT_SIZE);
     
     unsigned int frameCount = 0;
-
+    
     IMGUI_CHECKVERSION();
     ImGui::CreateContext();
     ImGui_ImplGlfw_InitForOpenGL(window, true);
     ImGui_ImplOpenGL3_Init("#version 460");
+    int simType = 1; // 1 for halvorsen, 0 for lorenz
+    ImGUIData_In data_in;
+    data_in.cam = &cam;
+    float deltaT = 1.0f;
+    data_in.deltaT = &deltaT;
+    data_in.frameCount = &frameCount;
+    data_in.simType = &simType;
+    data_in.SSBO = &SSBO;
+
     while (!glfwWindowShouldClose(window))
     {
         glEnable(GL_DEPTH_TEST);
         // std::cout<<"in main loop now\n ";
         float currentFrameTime = static_cast<float>(glfwGetTime());
         // std::cout<<currentFrameTime<<std::endl;
-        float deltaT = currentFrameTime - prevFrameTime;
+        deltaT = currentFrameTime - prevFrameTime;
         prevFrameTime = currentFrameTime;
         if(frameCount % 300 == 0) std::cout<<"Frame rate: "<<1.0f/deltaT<<std::endl;
-
+        if(frameCount % 60 == 0) std::cout<<"SimType: "<<*(data_in.simType)<<std::endl;
+        
         processInput(window, cam, deltaT*KEYBOARD_MOVE_SPEED);
         
         
@@ -258,21 +271,23 @@ if(!glNamedBufferStorage)
         camInfo.view = cam.getViewMatrix();
         camInfo.cameraPos = cam.pos;
         camInfo.cameraFront = cam.front;
-
+        
         ImGui_ImplOpenGL3_NewFrame();
         ImGui_ImplGlfw_NewFrame();
         ImGui::NewFrame();
-
+        
         // --- ImGui menu ---
         ImGui::Begin("Particle Controls");
-        ImGui::Text("FPS: %.1f", 1.0f / deltaT);
-
+        // ImGui::Text("FPS: %.1f", 1.0f / deltaT);
+        renderImGuiMenu(data_in);
+        
         ImGui::End();
-
-
+        
+        
         particlesComputeShader.use();
         particlesComputeShader.setFloat("deltaTime", deltaT*DT_FACTOR);
         particlesComputeShader.setUint("maxParticles", MAX_PARTICLES);
+        particlesComputeShader.setInt("simType", simType);
         particlesComputeShader.execute();
         // glMemoryBarrier(GL_VERTEX_ATTRIB_ARRAY_BARRIER_BIT);
         
@@ -291,12 +306,22 @@ if(!glNamedBufferStorage)
         particlesShader.use();
         particlesShader.setVec3("lightColour", glm::vec3(0.1f, 0.1f, 0.9f));
         glm::mat4 modelMat = glm::mat4(1.0f);
+        if(simType == 0){
+            modelMat = glm::translate(modelMat, lorenz_centroid);
+        }
+        else if(simType == 1){
+            modelMat = glm::translate(modelMat, halvorsen_centroid);
+        }
+        else{
+            std::cout<<"ERROR: simType is not 0 or 1"<<std::endl;
+        }
+        // modelMat = 
         particlesShader.setMat4("model", modelMat);
-    
+        
         glBindVertexArray(particleVAO);
         glDrawArrays(GL_POINTS, 0, MAX_PARTICLES); 
         glBindVertexArray(0);
-
+        
         particlesTrailComputeShader.use();
         particlesTrailComputeShader.setUint("frameCount", frameCount);
         particlesTrailComputeShader.setUint("maxParticles", MAX_PARTICLES);
@@ -306,6 +331,17 @@ if(!glNamedBufferStorage)
         particlesTrailShader.use();
         particlesTrailShader.setUint("frameCount", frameCount);
         particlesTrailShader.setUint("trailHistoryLength", TRAIL_HISTORY_LENGTH);
+        // if(simType == 0){
+        //     modelMat = glm::translate(modelMat, lorenz_centroid);
+        // }
+        // else if(simType == 1){
+        //     modelMat = glm::translate(modelMat, halvorsen_centroid);
+        // }
+        // else{
+        //     std::cout<<"ERROR: simType is not 0 or 1"<<std::endl;
+        // }
+        // modelMat = 
+        particlesTrailShader.setMat4("model", modelMat);
         glBindVertexArray(particleVAO);
         glBindBuffer(GL_DRAW_INDIRECT_BUFFER, cmdBufferSSBO);
         glMultiDrawArraysIndirect(GL_LINE_STRIP, nullptr, MAX_PARTICLES, 0);

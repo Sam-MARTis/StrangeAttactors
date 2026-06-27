@@ -3,7 +3,7 @@ layout(local_size_x = 256, local_size_y = 1, local_size_z = 1) in;
 
 struct Particle{
     vec4 position;
-    vec4 velocity;
+    // vec4 velocity;
 };
 
 layout(std430, binding=0) buffer ParticleBuffer{
@@ -12,6 +12,7 @@ layout(std430, binding=0) buffer ParticleBuffer{
 
 uniform float deltaTime;
 uniform uint maxParticles;
+uniform int simType; // 0 for lorenz, 1 for halvorsen, 2 for fourWing
 
 
 vec3 lorenz_second_derivative(vec3 pos){
@@ -76,8 +77,13 @@ void main(){
     if(index >= maxParticles) return;
 
     Particle p = particles[index];
-    p.position.xyz = rk4_lorenz(p.position.xyz, deltaTime);
-    // p.position.xyz = rk4_halvorsen(p.position.xyz, 1.4, deltaTime);
+    if(simType == 0){
+        p.position.xyz = rk4_lorenz(p.position.xyz, deltaTime);
+    }
+    // p.position.xyz = rk4_lorenz(p.position.xyz, deltaTime);
+    if(simType == 1){
+        p.position.xyz = rk4_halvorsen(p.position.xyz, 1.4, deltaTime);
+    }
     // p.position.xyz = rk4_fourWing(p.position.xyz, deltaTime);
 
     particles[index] = p;

@@ -25,6 +25,8 @@ class Camera{
 
     void handleMouseScroll(float yOffset);
     void handleMouseMove(float xOffset, float yOffset);
+    void recalculateProjectionMatrix();
+    void recalculateViewMatrix();
     // void turn(glm::vec3 cameraTurnVec; float anglesInDegrees);
     private:
     glm::mat4 viewMat;
@@ -35,4 +37,14 @@ class Camera{
     float min_view_distance;
     float max_view_distance;
 };
+
+struct ImGUIData_In {
+    float* deltaT;
+    unsigned int* frameCount;
+    Camera* cam;
+    unsigned int* SSBO;
+    glm::vec3* cameraPos;  // reference to whatever you use to set cam position
+    int* simType;  
+};
+void renderImGuiMenu(ImGUIData_In& data);
 

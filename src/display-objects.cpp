@@ -3,6 +3,11 @@
 #include <glm/gtc/type_ptr.hpp>
 #include"display-objects.hpp"
 #include "constants.hpp"
+#include "imgui.h"
+#include "imgui_impl_glfw.h"
+#include "aux.hpp"
+#include "display-objects.hpp"
+#include "particles.hpp"
 
 // class Camera{
 //     public: 
@@ -37,7 +42,12 @@ Camera::Camera(glm::vec3 cameraPos, glm::vec3 cameraFront, glm::vec3 cameraUp, f
     max_view_distance = cam_max_view_distance;
     projMat = glm::perspective(glm::radians(fov_deg), aspect_ratio, min_view_distance, max_view_distance);
 }
-
+void Camera::recalculateProjectionMatrix(){
+    projMat = glm::perspective(glm::radians(fov_deg), aspect_ratio, min_view_distance, max_view_distance);
+}
+void Camera::recalculateViewMatrix(){
+    viewMat = glm::lookAt(pos, pos+front, up);
+}
 glm::mat4 Camera::getViewMatrix(){
     return viewMat;
 }
@@ -70,3 +80,64 @@ void Camera::move(glm::vec3 cameraMovementVector){
     pos += cameraMovementVector;
     viewMat = glm::lookAt(pos, pos+front, up);
 }
+
+// void renderImGuiMenu(ImGUIData_In& data_in){
+    
+    // ImGui::Text("FPS: %.1f", 1.0f / *(data_in.deltaT));
+    // ImGui::Text("Frame Count: %d", *(data_in.frameCount));
+    // ImGui::Text("Camera Position: (%.2f, %.2f, %.2f)", data_in.cam->pos.x, data_in.cam->pos.y, data_in.cam->pos.z);
+
+
+    // // add your controls here
+
+void renderImGuiMenu(ImGUIData_In& data_in) {
+    ImGui::Text("FPS: %.1f", 1.0f / *(data_in.deltaT));
+    ImGui::Text("Frame Count: %d", *(data_in.frameCount));
+    ImGui::Text("Camera Position: (%.2f, %.2f, %.2f)",
+        data_in.cam->pos.x, data_in.cam->pos.y, data_in.cam->pos.z);
+
+    ImGui::Separator();
+
+    if (ImGui::Button("Lorenz")) {
+        *(data_in.simType) = 0; 
+        
+        // data_in.cam->pos = lorenz_centroid + glm::vec3(0.0f, 0.0f, 105.0f);
+        data_in.cam->pos = glm::vec3(0.0f, 0.0f, 135.0f);
+
+        
+        Particle* particles = initializeRandomParticlesCentroids(
+            MAX_PARTICLES, lorenz_centroid, lorenz_half_scale);
+
+        
+        glNamedBufferSubData(
+            *(data_in.SSBO),
+            0,
+            sizeof(Particle) * MAX_PARTICLES,
+            particles
+        );
+
+        delete[] particles;  
+    }
+
+    ImGui::SameLine();  
+
+    if (ImGui::Button("Halvorsen")) {
+        *(data_in.simType) = 1; 
+        // data_in.cam->pos = halvorsen_centroid + glm::vec3(0.0f, 0.0f, 35.0f);
+        data_in.cam->pos = glm::vec3(-10.0f, -5.0f, 35.0f);
+
+        Particle* particles = initializeRandomParticlesCentroids(
+            MAX_PARTICLES, halvorsen_centroid, halvorsen_half_scale);
+
+        glNamedBufferSubData(
+            *(data_in.SSBO),
+            0,
+            sizeof(Particle) * MAX_PARTICLES,
+            particles
+        );
+
+        delete[] particles;
+    }
+    data_in.cam->recalculateViewMatrix();
+}
+    

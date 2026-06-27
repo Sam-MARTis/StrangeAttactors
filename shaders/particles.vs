@@ -11,7 +11,7 @@ layout (std140, binding=0) uniform CameraInformation{
 
 struct Particle {
     vec4 position;
-    vec4 velocity;
+    // vec4 velocity;
 };
 
 layout(std430, binding = 0) buffer ParticleBuffer {
