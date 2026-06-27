@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/build/cmake_install.cmake"
+		"/home/odin/Code/Strange-Attractors/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

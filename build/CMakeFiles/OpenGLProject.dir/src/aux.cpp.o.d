@@ -1,7 +1,7 @@
 CMakeFiles/OpenGLProject.dir/src/aux.cpp.o: \
- /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/aux.cpp \
+ /home/odin/Code/Strange-Attractors/src/aux.cpp \
  /usr/include/stdc-predef.h \
- /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include/stb_image.h \
+ /home/odin/Code/Strange-Attractors/include/stb_image.h \
  /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -114,8 +114,8 @@ CMakeFiles/OpenGLProject.dir/src/aux.cpp.o: \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/xmmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/mmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/mm_malloc.h \
- /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include/glad/glad.h \
- /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include/KHR/khrplatform.h \
+ /home/odin/Code/Strange-Attractors/include/glad/glad.h \
+ /home/odin/Code/Strange-Attractors/include/KHR/khrplatform.h \
  /usr/include/GLFW/glfw3.h /usr/include/c++/13/iostream \
  /usr/include/c++/13/ostream /usr/include/c++/13/ios \
  /usr/include/c++/13/iosfwd /usr/include/c++/13/bits/stringfwd.h \
@@ -197,7 +197,7 @@ CMakeFiles/OpenGLProject.dir/src/aux.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
  /usr/include/c++/13/bits/fstream.tcc /usr/include/c++/13/sstream \
  /usr/include/c++/13/bits/sstream.tcc \
- /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include/aux.hpp \
+ /home/odin/Code/Strange-Attractors/include/aux.hpp \
  /usr/include/c++/13/random /usr/include/c++/13/cstdint \
  /usr/include/c++/13/bits/random.h /usr/include/c++/13/vector \
  /usr/include/c++/13/bits/stl_uninitialized.h \
@@ -210,7 +210,7 @@ CMakeFiles/OpenGLProject.dir/src/aux.cpp.o: \
  /usr/include/c++/13/bits/stl_numeric.h \
  /usr/include/c++/13/pstl/glue_numeric_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include/display-objects.hpp \
+ /home/odin/Code/Strange-Attractors/include/display-objects.hpp \
  /usr/include/glm/glm.hpp /usr/include/glm/detail/_fixes.hpp \
  /usr/include/glm/detail/setup.hpp /usr/include/c++/13/cassert \
  /usr/include/glm/simd/platform.h /usr/include/c++/13/climits \
@@ -392,4 +392,4 @@ CMakeFiles/OpenGLProject.dir/src/aux.cpp.o: \
  /usr/include/assimp/camera.h /usr/include/assimp/material.h \
  /usr/include/assimp/material.inl /usr/include/assimp/anim.h \
  /usr/include/assimp/metadata.h /usr/include/assimp/postprocess.h \
- /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include/constants.hpp
+ /home/odin/Code/Strange-Attractors/include/constants.hpp

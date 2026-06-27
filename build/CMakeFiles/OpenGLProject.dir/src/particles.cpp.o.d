@@ -1,7 +1,7 @@
 CMakeFiles/OpenGLProject.dir/src/particles.cpp.o: \
- /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/particles.cpp \
+ /home/odin/Code/Strange-Attractors/src/particles.cpp \
  /usr/include/stdc-predef.h \
- /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include/particles.hpp \
+ /home/odin/Code/Strange-Attractors/include/particles.hpp \
  /usr/include/glm/glm.hpp /usr/include/glm/detail/_fixes.hpp \
  /usr/include/c++/13/cmath /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -262,9 +262,9 @@ CMakeFiles/OpenGLProject.dir/src/particles.cpp.o: \
  /usr/include/glm/ext/vector_uint1_sized.hpp /usr/include/c++/13/cstring \
  /usr/include/string.h /usr/include/strings.h \
  /usr/include/glm/gtc/type_ptr.inl \
- /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include/aux.hpp \
- /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include/glad/glad.h \
- /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include/KHR/khrplatform.h \
+ /home/odin/Code/Strange-Attractors/include/aux.hpp \
+ /home/odin/Code/Strange-Attractors/include/glad/glad.h \
+ /home/odin/Code/Strange-Attractors/include/KHR/khrplatform.h \
  /usr/include/GLFW/glfw3.h /usr/include/c++/13/string \
  /usr/include/c++/13/bits/stringfwd.h \
  /usr/include/c++/13/bits/memoryfwd.h \
@@ -327,7 +327,7 @@ CMakeFiles/OpenGLProject.dir/src/particles.cpp.o: \
  /usr/include/c++/13/bits/stl_numeric.h \
  /usr/include/c++/13/pstl/glue_numeric_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include/display-objects.hpp \
+ /home/odin/Code/Strange-Attractors/include/display-objects.hpp \
  /usr/include/assimp/Importer.hpp /usr/include/assimp/types.h \
  /usr/include/assimp/defs.h /usr/include/assimp/config.h \
  /usr/include/assimp/vector2.h /usr/include/assimp/vector3.h \

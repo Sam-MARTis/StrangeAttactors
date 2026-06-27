@@ -8,13 +8,20 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/glad.c" "CMakeFiles/OpenGLProject.dir/src/glad.c.o" "gcc" "CMakeFiles/OpenGLProject.dir/src/glad.c.o.d"
-  "/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/aux.cpp" "CMakeFiles/OpenGLProject.dir/src/aux.cpp.o" "gcc" "CMakeFiles/OpenGLProject.dir/src/aux.cpp.o.d"
-  "/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/display-objects.cpp" "CMakeFiles/OpenGLProject.dir/src/display-objects.cpp.o" "gcc" "CMakeFiles/OpenGLProject.dir/src/display-objects.cpp.o.d"
-  "/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/main.cpp" "CMakeFiles/OpenGLProject.dir/src/main.cpp.o" "gcc" "CMakeFiles/OpenGLProject.dir/src/main.cpp.o.d"
-  "/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/particles.cpp" "CMakeFiles/OpenGLProject.dir/src/particles.cpp.o" "gcc" "CMakeFiles/OpenGLProject.dir/src/particles.cpp.o.d"
-  "/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/processing-objects.cpp" "CMakeFiles/OpenGLProject.dir/src/processing-objects.cpp.o" "gcc" "CMakeFiles/OpenGLProject.dir/src/processing-objects.cpp.o.d"
-  "/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/shaders.cpp" "CMakeFiles/OpenGLProject.dir/src/shaders.cpp.o" "gcc" "CMakeFiles/OpenGLProject.dir/src/shaders.cpp.o.d"
+  "/home/odin/Code/Strange-Attractors/src/glad.c" "CMakeFiles/OpenGLProject.dir/src/glad.c.o" "gcc" "CMakeFiles/OpenGLProject.dir/src/glad.c.o.d"
+  "/home/odin/Code/Strange-Attractors/src/aux.cpp" "CMakeFiles/OpenGLProject.dir/src/aux.cpp.o" "gcc" "CMakeFiles/OpenGLProject.dir/src/aux.cpp.o.d"
+  "/home/odin/Code/Strange-Attractors/src/display-objects.cpp" "CMakeFiles/OpenGLProject.dir/src/display-objects.cpp.o" "gcc" "CMakeFiles/OpenGLProject.dir/src/display-objects.cpp.o.d"
+  "/home/odin/Code/Strange-Attractors/src/imgui.cpp" "CMakeFiles/OpenGLProject.dir/src/imgui.cpp.o" "gcc" "CMakeFiles/OpenGLProject.dir/src/imgui.cpp.o.d"
+  "/home/odin/Code/Strange-Attractors/src/imgui_demo.cpp" "CMakeFiles/OpenGLProject.dir/src/imgui_demo.cpp.o" "gcc" "CMakeFiles/OpenGLProject.dir/src/imgui_demo.cpp.o.d"
+  "/home/odin/Code/Strange-Attractors/src/imgui_draw.cpp" "CMakeFiles/OpenGLProject.dir/src/imgui_draw.cpp.o" "gcc" "CMakeFiles/OpenGLProject.dir/src/imgui_draw.cpp.o.d"
+  "/home/odin/Code/Strange-Attractors/src/imgui_impl_glfw.cpp" "CMakeFiles/OpenGLProject.dir/src/imgui_impl_glfw.cpp.o" "gcc" "CMakeFiles/OpenGLProject.dir/src/imgui_impl_glfw.cpp.o.d"
+  "/home/odin/Code/Strange-Attractors/src/imgui_impl_opengl3.cpp" "CMakeFiles/OpenGLProject.dir/src/imgui_impl_opengl3.cpp.o" "gcc" "CMakeFiles/OpenGLProject.dir/src/imgui_impl_opengl3.cpp.o.d"
+  "/home/odin/Code/Strange-Attractors/src/imgui_tables.cpp" "CMakeFiles/OpenGLProject.dir/src/imgui_tables.cpp.o" "gcc" "CMakeFiles/OpenGLProject.dir/src/imgui_tables.cpp.o.d"
+  "/home/odin/Code/Strange-Attractors/src/imgui_widgets.cpp" "CMakeFiles/OpenGLProject.dir/src/imgui_widgets.cpp.o" "gcc" "CMakeFiles/OpenGLProject.dir/src/imgui_widgets.cpp.o.d"
+  "/home/odin/Code/Strange-Attractors/src/main.cpp" "CMakeFiles/OpenGLProject.dir/src/main.cpp.o" "gcc" "CMakeFiles/OpenGLProject.dir/src/main.cpp.o.d"
+  "/home/odin/Code/Strange-Attractors/src/particles.cpp" "CMakeFiles/OpenGLProject.dir/src/particles.cpp.o" "gcc" "CMakeFiles/OpenGLProject.dir/src/particles.cpp.o.d"
+  "/home/odin/Code/Strange-Attractors/src/processing-objects.cpp" "CMakeFiles/OpenGLProject.dir/src/processing-objects.cpp.o" "gcc" "CMakeFiles/OpenGLProject.dir/src/processing-objects.cpp.o.d"
+  "/home/odin/Code/Strange-Attractors/src/shaders.cpp" "CMakeFiles/OpenGLProject.dir/src/shaders.cpp.o" "gcc" "CMakeFiles/OpenGLProject.dir/src/shaders.cpp.o.d"
   "" "OpenGLProject" "gcc" "CMakeFiles/OpenGLProject.dir/link.d"
   )
 

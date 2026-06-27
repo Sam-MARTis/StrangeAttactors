@@ -1,5 +1,5 @@
 CMakeFiles/OpenGLProject.dir/src/main.cpp.o: \
- /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/main.cpp \
+ /home/odin/Code/Strange-Attractors/src/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/13/iostream \
  /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -150,8 +150,8 @@ CMakeFiles/OpenGLProject.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
- /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include/glad/glad.h \
- /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include/KHR/khrplatform.h \
+ /home/odin/Code/Strange-Attractors/include/glad/glad.h \
+ /home/odin/Code/Strange-Attractors/include/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
@@ -179,7 +179,7 @@ CMakeFiles/OpenGLProject.dir/src/main.cpp.o: \
  /usr/include/c++/13/tr1/poly_hermite.tcc \
  /usr/include/c++/13/tr1/poly_laguerre.tcc \
  /usr/include/c++/13/tr1/riemann_zeta.tcc \
- /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include/aux.hpp \
+ /home/odin/Code/Strange-Attractors/include/aux.hpp \
  /usr/include/c++/13/random /usr/include/c++/13/cstdint \
  /usr/include/c++/13/bits/random.h /usr/include/c++/13/vector \
  /usr/include/c++/13/bits/stl_uninitialized.h \
@@ -192,7 +192,7 @@ CMakeFiles/OpenGLProject.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/stl_numeric.h \
  /usr/include/c++/13/pstl/glue_numeric_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include/display-objects.hpp \
+ /home/odin/Code/Strange-Attractors/include/display-objects.hpp \
  /usr/include/glm/glm.hpp /usr/include/glm/detail/_fixes.hpp \
  /usr/include/glm/detail/setup.hpp /usr/include/c++/13/cassert \
  /usr/include/assert.h /usr/include/glm/simd/platform.h \
@@ -383,10 +383,10 @@ CMakeFiles/OpenGLProject.dir/src/main.cpp.o: \
  /usr/include/assimp/camera.h /usr/include/assimp/material.h \
  /usr/include/assimp/material.inl /usr/include/assimp/anim.h \
  /usr/include/assimp/metadata.h /usr/include/assimp/postprocess.h \
- /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include/constants.hpp \
- /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include/stb_image.h \
+ /home/odin/Code/Strange-Attractors/include/constants.hpp \
+ /home/odin/Code/Strange-Attractors/include/stb_image.h \
  /usr/include/c++/13/stdlib.h \
- /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include/processing-objects.hpp \
+ /home/odin/Code/Strange-Attractors/include/processing-objects.hpp \
  /usr/include/c++/13/unordered_map \
  /usr/include/c++/13/bits/unordered_map.h \
  /usr/include/c++/13/bits/hashtable.h \
@@ -395,5 +395,9 @@ CMakeFiles/OpenGLProject.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/enable_special_members.h \
  /usr/include/c++/13/bits/node_handle.h \
  /usr/include/c++/13/bits/erase_if.h \
- /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include/shaders.hpp \
- /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include/particles.hpp
+ /home/odin/Code/Strange-Attractors/include/shaders.hpp \
+ /home/odin/Code/Strange-Attractors/include/particles.hpp \
+ /home/odin/Code/Strange-Attractors/include/imgui.h \
+ /home/odin/Code/Strange-Attractors/include/imconfig.h \
+ /home/odin/Code/Strange-Attractors/include/imgui_impl_glfw.h \
+ /home/odin/Code/Strange-Attractors/include/imgui_impl_opengl3.h

@@ -3,15 +3,15 @@
 
 # compile C with /usr/bin/cc
 # compile CXX with /usr/bin/c++
-C_DEFINES = -DMODEL_DIR=\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/resources/models/\" -DSHADER_DIR=\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/shaders/\" -DTEXTURE_DIR=\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/resources/textures/\"
+C_DEFINES = -DMODEL_DIR=\"/home/odin/Code/Strange-Attractors/resources/models/\" -DSHADER_DIR=\"/home/odin/Code/Strange-Attractors/shaders/\" -DTEXTURE_DIR=\"/home/odin/Code/Strange-Attractors/resources/textures/\"
 
-C_INCLUDES = -I/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include
+C_INCLUDES = -I/home/odin/Code/Strange-Attractors/include
 
 C_FLAGS = 
 
-CXX_DEFINES = -DMODEL_DIR=\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/resources/models/\" -DSHADER_DIR=\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/shaders/\" -DTEXTURE_DIR=\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/resources/textures/\"
+CXX_DEFINES = -DMODEL_DIR=\"/home/odin/Code/Strange-Attractors/resources/models/\" -DSHADER_DIR=\"/home/odin/Code/Strange-Attractors/shaders/\" -DTEXTURE_DIR=\"/home/odin/Code/Strange-Attractors/resources/textures/\"
 
-CXX_INCLUDES = -I/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include
+CXX_INCLUDES = -I/home/odin/Code/Strange-Attractors/include
 
 CXX_FLAGS = -std=gnu++17
 

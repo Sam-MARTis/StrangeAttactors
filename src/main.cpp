@@ -10,6 +10,10 @@
 #include "shaders.hpp"
 #include "particles.hpp"
 
+#include <imgui.h>
+#include <imgui_impl_glfw.h>
+#include <imgui_impl_opengl3.h>
+
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
@@ -232,6 +236,11 @@ if(!glNamedBufferStorage)
     glEnable(GL_PROGRAM_POINT_SIZE);
     
     unsigned int frameCount = 0;
+
+    IMGUI_CHECKVERSION();
+    ImGui::CreateContext();
+    ImGui_ImplGlfw_InitForOpenGL(window, true);
+    ImGui_ImplOpenGL3_Init("#version 460");
     while (!glfwWindowShouldClose(window))
     {
         glEnable(GL_DEPTH_TEST);
@@ -250,6 +259,15 @@ if(!glNamedBufferStorage)
         camInfo.cameraPos = cam.pos;
         camInfo.cameraFront = cam.front;
 
+        ImGui_ImplOpenGL3_NewFrame();
+        ImGui_ImplGlfw_NewFrame();
+        ImGui::NewFrame();
+
+        // --- ImGui menu ---
+        ImGui::Begin("Particle Controls");
+        ImGui::Text("FPS: %.1f", 1.0f / deltaT);
+
+        ImGui::End();
 
 
         particlesComputeShader.use();
@@ -323,10 +341,15 @@ if(!glNamedBufferStorage)
     
         frameCount++;
 
+        ImGui::Render();
+        ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
 
+    ImGui_ImplOpenGL3_Shutdown();
+    ImGui_ImplGlfw_Shutdown();
+    ImGui::DestroyContext();
     glfwTerminate();
     return 0;
 }

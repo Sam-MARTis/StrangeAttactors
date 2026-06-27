@@ -1,44 +1,86 @@
 [
 {
-  "directory": "/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/build",
-  "command": "/usr/bin/c++ -DMODEL_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/resources/models/\\\" -DSHADER_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/shaders/\\\" -DTEXTURE_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/resources/textures/\\\" -I/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include -std=gnu++17 -o CMakeFiles/OpenGLProject.dir/src/aux.cpp.o -c /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/aux.cpp",
-  "file": "/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/aux.cpp",
+  "directory": "/home/odin/Code/Strange-Attractors/build",
+  "command": "/usr/bin/c++ -DMODEL_DIR=\\\"/home/odin/Code/Strange-Attractors/resources/models/\\\" -DSHADER_DIR=\\\"/home/odin/Code/Strange-Attractors/shaders/\\\" -DTEXTURE_DIR=\\\"/home/odin/Code/Strange-Attractors/resources/textures/\\\" -I/home/odin/Code/Strange-Attractors/include -std=gnu++17 -o CMakeFiles/OpenGLProject.dir/src/aux.cpp.o -c /home/odin/Code/Strange-Attractors/src/aux.cpp",
+  "file": "/home/odin/Code/Strange-Attractors/src/aux.cpp",
   "output": "CMakeFiles/OpenGLProject.dir/src/aux.cpp.o"
 },
 {
-  "directory": "/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/build",
-  "command": "/usr/bin/c++ -DMODEL_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/resources/models/\\\" -DSHADER_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/shaders/\\\" -DTEXTURE_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/resources/textures/\\\" -I/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include -std=gnu++17 -o CMakeFiles/OpenGLProject.dir/src/display-objects.cpp.o -c /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/display-objects.cpp",
-  "file": "/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/display-objects.cpp",
+  "directory": "/home/odin/Code/Strange-Attractors/build",
+  "command": "/usr/bin/c++ -DMODEL_DIR=\\\"/home/odin/Code/Strange-Attractors/resources/models/\\\" -DSHADER_DIR=\\\"/home/odin/Code/Strange-Attractors/shaders/\\\" -DTEXTURE_DIR=\\\"/home/odin/Code/Strange-Attractors/resources/textures/\\\" -I/home/odin/Code/Strange-Attractors/include -std=gnu++17 -o CMakeFiles/OpenGLProject.dir/src/display-objects.cpp.o -c /home/odin/Code/Strange-Attractors/src/display-objects.cpp",
+  "file": "/home/odin/Code/Strange-Attractors/src/display-objects.cpp",
   "output": "CMakeFiles/OpenGLProject.dir/src/display-objects.cpp.o"
 },
 {
-  "directory": "/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/build",
-  "command": "/usr/bin/cc -DMODEL_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/resources/models/\\\" -DSHADER_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/shaders/\\\" -DTEXTURE_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/resources/textures/\\\" -I/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include  -o CMakeFiles/OpenGLProject.dir/src/glad.c.o -c /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/glad.c",
-  "file": "/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/glad.c",
+  "directory": "/home/odin/Code/Strange-Attractors/build",
+  "command": "/usr/bin/cc -DMODEL_DIR=\\\"/home/odin/Code/Strange-Attractors/resources/models/\\\" -DSHADER_DIR=\\\"/home/odin/Code/Strange-Attractors/shaders/\\\" -DTEXTURE_DIR=\\\"/home/odin/Code/Strange-Attractors/resources/textures/\\\" -I/home/odin/Code/Strange-Attractors/include  -o CMakeFiles/OpenGLProject.dir/src/glad.c.o -c /home/odin/Code/Strange-Attractors/src/glad.c",
+  "file": "/home/odin/Code/Strange-Attractors/src/glad.c",
   "output": "CMakeFiles/OpenGLProject.dir/src/glad.c.o"
 },
 {
-  "directory": "/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/build",
-  "command": "/usr/bin/c++ -DMODEL_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/resources/models/\\\" -DSHADER_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/shaders/\\\" -DTEXTURE_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/resources/textures/\\\" -I/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include -std=gnu++17 -o CMakeFiles/OpenGLProject.dir/src/main.cpp.o -c /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/main.cpp",
-  "file": "/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/main.cpp",
+  "directory": "/home/odin/Code/Strange-Attractors/build",
+  "command": "/usr/bin/c++ -DMODEL_DIR=\\\"/home/odin/Code/Strange-Attractors/resources/models/\\\" -DSHADER_DIR=\\\"/home/odin/Code/Strange-Attractors/shaders/\\\" -DTEXTURE_DIR=\\\"/home/odin/Code/Strange-Attractors/resources/textures/\\\" -I/home/odin/Code/Strange-Attractors/include -std=gnu++17 -o CMakeFiles/OpenGLProject.dir/src/imgui.cpp.o -c /home/odin/Code/Strange-Attractors/src/imgui.cpp",
+  "file": "/home/odin/Code/Strange-Attractors/src/imgui.cpp",
+  "output": "CMakeFiles/OpenGLProject.dir/src/imgui.cpp.o"
+},
+{
+  "directory": "/home/odin/Code/Strange-Attractors/build",
+  "command": "/usr/bin/c++ -DMODEL_DIR=\\\"/home/odin/Code/Strange-Attractors/resources/models/\\\" -DSHADER_DIR=\\\"/home/odin/Code/Strange-Attractors/shaders/\\\" -DTEXTURE_DIR=\\\"/home/odin/Code/Strange-Attractors/resources/textures/\\\" -I/home/odin/Code/Strange-Attractors/include -std=gnu++17 -o CMakeFiles/OpenGLProject.dir/src/imgui_demo.cpp.o -c /home/odin/Code/Strange-Attractors/src/imgui_demo.cpp",
+  "file": "/home/odin/Code/Strange-Attractors/src/imgui_demo.cpp",
+  "output": "CMakeFiles/OpenGLProject.dir/src/imgui_demo.cpp.o"
+},
+{
+  "directory": "/home/odin/Code/Strange-Attractors/build",
+  "command": "/usr/bin/c++ -DMODEL_DIR=\\\"/home/odin/Code/Strange-Attractors/resources/models/\\\" -DSHADER_DIR=\\\"/home/odin/Code/Strange-Attractors/shaders/\\\" -DTEXTURE_DIR=\\\"/home/odin/Code/Strange-Attractors/resources/textures/\\\" -I/home/odin/Code/Strange-Attractors/include -std=gnu++17 -o CMakeFiles/OpenGLProject.dir/src/imgui_draw.cpp.o -c /home/odin/Code/Strange-Attractors/src/imgui_draw.cpp",
+  "file": "/home/odin/Code/Strange-Attractors/src/imgui_draw.cpp",
+  "output": "CMakeFiles/OpenGLProject.dir/src/imgui_draw.cpp.o"
+},
+{
+  "directory": "/home/odin/Code/Strange-Attractors/build",
+  "command": "/usr/bin/c++ -DMODEL_DIR=\\\"/home/odin/Code/Strange-Attractors/resources/models/\\\" -DSHADER_DIR=\\\"/home/odin/Code/Strange-Attractors/shaders/\\\" -DTEXTURE_DIR=\\\"/home/odin/Code/Strange-Attractors/resources/textures/\\\" -I/home/odin/Code/Strange-Attractors/include -std=gnu++17 -o CMakeFiles/OpenGLProject.dir/src/imgui_impl_glfw.cpp.o -c /home/odin/Code/Strange-Attractors/src/imgui_impl_glfw.cpp",
+  "file": "/home/odin/Code/Strange-Attractors/src/imgui_impl_glfw.cpp",
+  "output": "CMakeFiles/OpenGLProject.dir/src/imgui_impl_glfw.cpp.o"
+},
+{
+  "directory": "/home/odin/Code/Strange-Attractors/build",
+  "command": "/usr/bin/c++ -DMODEL_DIR=\\\"/home/odin/Code/Strange-Attractors/resources/models/\\\" -DSHADER_DIR=\\\"/home/odin/Code/Strange-Attractors/shaders/\\\" -DTEXTURE_DIR=\\\"/home/odin/Code/Strange-Attractors/resources/textures/\\\" -I/home/odin/Code/Strange-Attractors/include -std=gnu++17 -o CMakeFiles/OpenGLProject.dir/src/imgui_impl_opengl3.cpp.o -c /home/odin/Code/Strange-Attractors/src/imgui_impl_opengl3.cpp",
+  "file": "/home/odin/Code/Strange-Attractors/src/imgui_impl_opengl3.cpp",
+  "output": "CMakeFiles/OpenGLProject.dir/src/imgui_impl_opengl3.cpp.o"
+},
+{
+  "directory": "/home/odin/Code/Strange-Attractors/build",
+  "command": "/usr/bin/c++ -DMODEL_DIR=\\\"/home/odin/Code/Strange-Attractors/resources/models/\\\" -DSHADER_DIR=\\\"/home/odin/Code/Strange-Attractors/shaders/\\\" -DTEXTURE_DIR=\\\"/home/odin/Code/Strange-Attractors/resources/textures/\\\" -I/home/odin/Code/Strange-Attractors/include -std=gnu++17 -o CMakeFiles/OpenGLProject.dir/src/imgui_tables.cpp.o -c /home/odin/Code/Strange-Attractors/src/imgui_tables.cpp",
+  "file": "/home/odin/Code/Strange-Attractors/src/imgui_tables.cpp",
+  "output": "CMakeFiles/OpenGLProject.dir/src/imgui_tables.cpp.o"
+},
+{
+  "directory": "/home/odin/Code/Strange-Attractors/build",
+  "command": "/usr/bin/c++ -DMODEL_DIR=\\\"/home/odin/Code/Strange-Attractors/resources/models/\\\" -DSHADER_DIR=\\\"/home/odin/Code/Strange-Attractors/shaders/\\\" -DTEXTURE_DIR=\\\"/home/odin/Code/Strange-Attractors/resources/textures/\\\" -I/home/odin/Code/Strange-Attractors/include -std=gnu++17 -o CMakeFiles/OpenGLProject.dir/src/imgui_widgets.cpp.o -c /home/odin/Code/Strange-Attractors/src/imgui_widgets.cpp",
+  "file": "/home/odin/Code/Strange-Attractors/src/imgui_widgets.cpp",
+  "output": "CMakeFiles/OpenGLProject.dir/src/imgui_widgets.cpp.o"
+},
+{
+  "directory": "/home/odin/Code/Strange-Attractors/build",
+  "command": "/usr/bin/c++ -DMODEL_DIR=\\\"/home/odin/Code/Strange-Attractors/resources/models/\\\" -DSHADER_DIR=\\\"/home/odin/Code/Strange-Attractors/shaders/\\\" -DTEXTURE_DIR=\\\"/home/odin/Code/Strange-Attractors/resources/textures/\\\" -I/home/odin/Code/Strange-Attractors/include -std=gnu++17 -o CMakeFiles/OpenGLProject.dir/src/main.cpp.o -c /home/odin/Code/Strange-Attractors/src/main.cpp",
+  "file": "/home/odin/Code/Strange-Attractors/src/main.cpp",
   "output": "CMakeFiles/OpenGLProject.dir/src/main.cpp.o"
 },
 {
-  "directory": "/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/build",
-  "command": "/usr/bin/c++ -DMODEL_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/resources/models/\\\" -DSHADER_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/shaders/\\\" -DTEXTURE_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/resources/textures/\\\" -I/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include -std=gnu++17 -o CMakeFiles/OpenGLProject.dir/src/particles.cpp.o -c /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/particles.cpp",
-  "file": "/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/particles.cpp",
+  "directory": "/home/odin/Code/Strange-Attractors/build",
+  "command": "/usr/bin/c++ -DMODEL_DIR=\\\"/home/odin/Code/Strange-Attractors/resources/models/\\\" -DSHADER_DIR=\\\"/home/odin/Code/Strange-Attractors/shaders/\\\" -DTEXTURE_DIR=\\\"/home/odin/Code/Strange-Attractors/resources/textures/\\\" -I/home/odin/Code/Strange-Attractors/include -std=gnu++17 -o CMakeFiles/OpenGLProject.dir/src/particles.cpp.o -c /home/odin/Code/Strange-Attractors/src/particles.cpp",
+  "file": "/home/odin/Code/Strange-Attractors/src/particles.cpp",
   "output": "CMakeFiles/OpenGLProject.dir/src/particles.cpp.o"
 },
 {
-  "directory": "/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/build",
-  "command": "/usr/bin/c++ -DMODEL_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/resources/models/\\\" -DSHADER_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/shaders/\\\" -DTEXTURE_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/resources/textures/\\\" -I/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include -std=gnu++17 -o CMakeFiles/OpenGLProject.dir/src/processing-objects.cpp.o -c /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/processing-objects.cpp",
-  "file": "/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/processing-objects.cpp",
+  "directory": "/home/odin/Code/Strange-Attractors/build",
+  "command": "/usr/bin/c++ -DMODEL_DIR=\\\"/home/odin/Code/Strange-Attractors/resources/models/\\\" -DSHADER_DIR=\\\"/home/odin/Code/Strange-Attractors/shaders/\\\" -DTEXTURE_DIR=\\\"/home/odin/Code/Strange-Attractors/resources/textures/\\\" -I/home/odin/Code/Strange-Attractors/include -std=gnu++17 -o CMakeFiles/OpenGLProject.dir/src/processing-objects.cpp.o -c /home/odin/Code/Strange-Attractors/src/processing-objects.cpp",
+  "file": "/home/odin/Code/Strange-Attractors/src/processing-objects.cpp",
   "output": "CMakeFiles/OpenGLProject.dir/src/processing-objects.cpp.o"
 },
 {
-  "directory": "/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/build",
-  "command": "/usr/bin/c++ -DMODEL_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/resources/models/\\\" -DSHADER_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/shaders/\\\" -DTEXTURE_DIR=\\\"/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/resources/textures/\\\" -I/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include -std=gnu++17 -o CMakeFiles/OpenGLProject.dir/src/shaders.cpp.o -c /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/shaders.cpp",
-  "file": "/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/shaders.cpp",
+  "directory": "/home/odin/Code/Strange-Attractors/build",
+  "command": "/usr/bin/c++ -DMODEL_DIR=\\\"/home/odin/Code/Strange-Attractors/resources/models/\\\" -DSHADER_DIR=\\\"/home/odin/Code/Strange-Attractors/shaders/\\\" -DTEXTURE_DIR=\\\"/home/odin/Code/Strange-Attractors/resources/textures/\\\" -I/home/odin/Code/Strange-Attractors/include -std=gnu++17 -o CMakeFiles/OpenGLProject.dir/src/shaders.cpp.o -c /home/odin/Code/Strange-Attractors/src/shaders.cpp",
+  "file": "/home/odin/Code/Strange-Attractors/src/shaders.cpp",
   "output": "CMakeFiles/OpenGLProject.dir/src/shaders.cpp.o"
 }
 ]

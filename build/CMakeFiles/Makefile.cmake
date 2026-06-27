@@ -7,7 +7,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/CMakeLists.txt"
+  "/home/odin/Code/Strange-Attractors/CMakeLists.txt"
   "CMakeFiles/4.0.0-rc2/CMakeCCompiler.cmake"
   "CMakeFiles/4.0.0-rc2/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.0.0-rc2/CMakeSystem.cmake"

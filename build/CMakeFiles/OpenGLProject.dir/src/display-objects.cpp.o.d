@@ -1,5 +1,5 @@
 CMakeFiles/OpenGLProject.dir/src/display-objects.cpp.o: \
- /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/display-objects.cpp \
+ /home/odin/Code/Strange-Attractors/src/display-objects.cpp \
  /usr/include/stdc-predef.h /usr/include/glm/glm.hpp \
  /usr/include/glm/detail/_fixes.hpp /usr/include/c++/13/cmath \
  /usr/include/c++/13/bits/requires_hosted.h \
@@ -261,7 +261,7 @@ CMakeFiles/OpenGLProject.dir/src/display-objects.cpp.o: \
  /usr/include/glm/ext/vector_uint1_sized.hpp /usr/include/c++/13/cstring \
  /usr/include/string.h /usr/include/strings.h \
  /usr/include/glm/gtc/type_ptr.inl \
- /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include/display-objects.hpp \
+ /home/odin/Code/Strange-Attractors/include/display-objects.hpp \
  /usr/include/assimp/Importer.hpp /usr/include/assimp/types.h \
  /usr/include/assimp/defs.h /usr/include/assimp/config.h \
  /usr/include/assimp/vector2.h /usr/include/assimp/vector3.h \
@@ -338,4 +338,4 @@ CMakeFiles/OpenGLProject.dir/src/display-objects.cpp.o: \
  /usr/include/assimp/camera.h /usr/include/assimp/material.h \
  /usr/include/assimp/material.inl /usr/include/assimp/anim.h \
  /usr/include/assimp/metadata.h /usr/include/assimp/postprocess.h \
- /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include/constants.hpp
+ /home/odin/Code/Strange-Attractors/include/constants.hpp

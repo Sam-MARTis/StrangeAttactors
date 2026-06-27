@@ -1,8 +1,8 @@
 CMakeFiles/OpenGLProject.dir/src/shaders.cpp.o: \
- /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/src/shaders.cpp \
+ /home/odin/Code/Strange-Attractors/src/shaders.cpp \
  /usr/include/stdc-predef.h \
- /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include/glad/glad.h \
- /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include/KHR/khrplatform.h \
+ /home/odin/Code/Strange-Attractors/include/glad/glad.h \
+ /home/odin/Code/Strange-Attractors/include/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -157,7 +157,7 @@ CMakeFiles/OpenGLProject.dir/src/shaders.cpp.o: \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
- /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include/display-objects.hpp \
+ /home/odin/Code/Strange-Attractors/include/display-objects.hpp \
  /usr/include/glm/glm.hpp /usr/include/glm/detail/_fixes.hpp \
  /usr/include/c++/13/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
@@ -373,7 +373,7 @@ CMakeFiles/OpenGLProject.dir/src/shaders.cpp.o: \
  /usr/include/assimp/camera.h /usr/include/assimp/material.h \
  /usr/include/assimp/material.inl /usr/include/assimp/anim.h \
  /usr/include/assimp/metadata.h /usr/include/assimp/postprocess.h \
- /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include/processing-objects.hpp \
+ /home/odin/Code/Strange-Attractors/include/processing-objects.hpp \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
@@ -385,8 +385,8 @@ CMakeFiles/OpenGLProject.dir/src/shaders.cpp.o: \
  /usr/include/c++/13/bits/enable_special_members.h \
  /usr/include/c++/13/bits/node_handle.h \
  /usr/include/c++/13/bits/erase_if.h \
- /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include/shaders.hpp \
- /home/odin/Code/OpenGL/Tutorials/learnopengl_2/12_Indirect-Rendering/include/aux.hpp \
+ /home/odin/Code/Strange-Attractors/include/shaders.hpp \
+ /home/odin/Code/Strange-Attractors/include/aux.hpp \
  /usr/include/c++/13/random /usr/include/c++/13/bits/random.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/opt_random.h \
  /usr/include/c++/13/bits/random.tcc /usr/include/c++/13/numeric \
