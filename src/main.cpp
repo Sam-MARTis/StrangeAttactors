@@ -255,6 +255,12 @@ int main()
     halvorsen_modelMat = glm::translate(halvorsen_modelMat, -halvorsen_centroid);
     halvorsen_modelMat = glm::scale(halvorsen_modelMat, halvorsen_scaling);
 
+    WindowContext windowContext;
+    windowContext.cam = &cam;
+    windowContext.simType = &simType;
+    windowContext.SSBO = &particleSSBO;
+    glfwSetWindowUserPointer(window, &windowContext);
+
     while (!glfwWindowShouldClose(window))
     {
         glEnable(GL_DEPTH_TEST);
