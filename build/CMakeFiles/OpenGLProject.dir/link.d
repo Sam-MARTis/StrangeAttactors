@@ -2,16 +2,16 @@ OpenGLProject: \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o \
   /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o \
+  CMakeFiles/OpenGLProject.dir/external/imgui/imgui.cpp.o \
+  CMakeFiles/OpenGLProject.dir/external/imgui/imgui_demo.cpp.o \
+  CMakeFiles/OpenGLProject.dir/external/imgui/imgui_draw.cpp.o \
+  CMakeFiles/OpenGLProject.dir/external/imgui/imgui_impl_glfw.cpp.o \
+  CMakeFiles/OpenGLProject.dir/external/imgui/imgui_impl_opengl3.cpp.o \
+  CMakeFiles/OpenGLProject.dir/external/imgui/imgui_tables.cpp.o \
+  CMakeFiles/OpenGLProject.dir/external/imgui/imgui_widgets.cpp.o \
   CMakeFiles/OpenGLProject.dir/src/aux.cpp.o \
   CMakeFiles/OpenGLProject.dir/src/display-objects.cpp.o \
   CMakeFiles/OpenGLProject.dir/src/glad.c.o \
-  CMakeFiles/OpenGLProject.dir/src/imgui.cpp.o \
-  CMakeFiles/OpenGLProject.dir/src/imgui_demo.cpp.o \
-  CMakeFiles/OpenGLProject.dir/src/imgui_draw.cpp.o \
-  CMakeFiles/OpenGLProject.dir/src/imgui_impl_glfw.cpp.o \
-  CMakeFiles/OpenGLProject.dir/src/imgui_impl_opengl3.cpp.o \
-  CMakeFiles/OpenGLProject.dir/src/imgui_tables.cpp.o \
-  CMakeFiles/OpenGLProject.dir/src/imgui_widgets.cpp.o \
   CMakeFiles/OpenGLProject.dir/src/main.cpp.o \
   CMakeFiles/OpenGLProject.dir/src/particles.cpp.o \
   CMakeFiles/OpenGLProject.dir/src/processing-objects.cpp.o \
@@ -79,25 +79,25 @@ OpenGLProject: \
 
 /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o:
 
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui.cpp.o:
+
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui_demo.cpp.o:
+
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui_draw.cpp.o:
+
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui_impl_glfw.cpp.o:
+
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui_impl_opengl3.cpp.o:
+
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui_tables.cpp.o:
+
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui_widgets.cpp.o:
+
 CMakeFiles/OpenGLProject.dir/src/aux.cpp.o:
 
 CMakeFiles/OpenGLProject.dir/src/display-objects.cpp.o:
 
 CMakeFiles/OpenGLProject.dir/src/glad.c.o:
-
-CMakeFiles/OpenGLProject.dir/src/imgui.cpp.o:
-
-CMakeFiles/OpenGLProject.dir/src/imgui_demo.cpp.o:
-
-CMakeFiles/OpenGLProject.dir/src/imgui_draw.cpp.o:
-
-CMakeFiles/OpenGLProject.dir/src/imgui_impl_glfw.cpp.o:
-
-CMakeFiles/OpenGLProject.dir/src/imgui_impl_opengl3.cpp.o:
-
-CMakeFiles/OpenGLProject.dir/src/imgui_tables.cpp.o:
-
-CMakeFiles/OpenGLProject.dir/src/imgui_widgets.cpp.o:
 
 CMakeFiles/OpenGLProject.dir/src/main.cpp.o:
 

@@ -48,38 +48,38 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height){
 // }
 
 void mouseButtonCallback(GLFWwindow* window, int button, int action, int mods) {
-    Camera* cam = static_cast<Camera *>(glfwGetWindowUserPointer(window));
+    // Camera* cam = static_cast<Camera *>(glfwGetWindowUserPointer(window));
 
-    if (button == GLFW_MOUSE_BUTTON_LEFT) {
-        if (action == GLFW_PRESS) {
-            cam->isDragging = true;
-            double lastX, lastY;
-            glfwGetCursorPos(window, &lastX, &lastY);
-            cam->mousePosX = lastX;
-            cam->mousePosY = lastY;
-        } else if (action == GLFW_RELEASE) {
-            cam->isDragging = false;
-        }
-    }
+    // if (button == GLFW_MOUSE_BUTTON_LEFT) {
+    //     if (action == GLFW_PRESS) {
+    //         cam->isDragging = true;
+    //         double lastX, lastY;
+    //         glfwGetCursorPos(window, &lastX, &lastY);
+    //         cam->mousePosX = lastX;
+    //         cam->mousePosY = lastY;
+    //     } else if (action == GLFW_RELEASE) {
+    //         cam->isDragging = false;
+    //     }
+    // }
 }
 
 void cursorPosCallback(GLFWwindow* window, double xpos, double ypos) {
-    Camera* cam = static_cast<Camera *>(glfwGetWindowUserPointer(window));
-    if (!cam->isDragging) return;
+    // Camera* cam = static_cast<Camera *>(glfwGetWindowUserPointer(window));
+    // if (!cam->isDragging) return;
 
-    double dx = clamp(-(xpos - cam->mousePosX), -MAX_DS, MAX_DS);
-    double dy = clamp((ypos - cam->mousePosY), -MAX_DS, MAX_DS);
+    // double dx = clamp(-(xpos - cam->mousePosX), -MAX_DS, MAX_DS);
+    // double dy = clamp((ypos - cam->mousePosY), -MAX_DS, MAX_DS);
     
-    cam->mousePosX = xpos;
-    cam->mousePosY = ypos;
-    cam->handleMouseMove(dx, dy);
+    // cam->mousePosX = xpos;
+    // cam->mousePosY = ypos;
+    // cam->handleMouseMove(dx, dy);
 }
 void mouseScrollCallback(GLFWwindow* window, double xoffset, double yoffset){
-    Camera* cam = static_cast<Camera *>(glfwGetWindowUserPointer(window));
-    cam->handleMouseScroll(yoffset);
+    // Camera* cam = static_cast<Camera *>(glfwGetWindowUserPointer(window));
+    // cam->handleMouseScroll(yoffset);
 }
 
-GLFWwindow* setupWindow(Camera &cam, int width, int height){
+GLFWwindow* setupWindow(int width, int height){
     glfwInit();
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);
@@ -89,7 +89,7 @@ GLFWwindow* setupWindow(Camera &cam, int width, int height){
     #endif
 
     GLFWwindow* window = glfwCreateWindow(width, height, "OpenGL practice", NULL, NULL);
-    glfwSetWindowUserPointer(window, &cam);
+    // glfwSetWindowUserPointer(window, &cam);
     if(window==NULL){
         std::cout<<"Failed to create GLFW window" <<std::endl;
         glfwTerminate();

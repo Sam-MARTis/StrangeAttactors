@@ -5,13 +5,13 @@
 # compile CXX with /usr/bin/c++
 C_DEFINES = -DMODEL_DIR=\"/home/odin/Code/Strange-Attractors/resources/models/\" -DSHADER_DIR=\"/home/odin/Code/Strange-Attractors/shaders/\" -DTEXTURE_DIR=\"/home/odin/Code/Strange-Attractors/resources/textures/\"
 
-C_INCLUDES = -I/home/odin/Code/Strange-Attractors/include
+C_INCLUDES = -I/home/odin/Code/Strange-Attractors/include -I/home/odin/Code/Strange-Attractors/external/imgui
 
 C_FLAGS = 
 
 CXX_DEFINES = -DMODEL_DIR=\"/home/odin/Code/Strange-Attractors/resources/models/\" -DSHADER_DIR=\"/home/odin/Code/Strange-Attractors/shaders/\" -DTEXTURE_DIR=\"/home/odin/Code/Strange-Attractors/resources/textures/\"
 
-CXX_INCLUDES = -I/home/odin/Code/Strange-Attractors/include
+CXX_INCLUDES = -I/home/odin/Code/Strange-Attractors/include -I/home/odin/Code/Strange-Attractors/external/imgui
 
 CXX_FLAGS = -std=gnu++17
 

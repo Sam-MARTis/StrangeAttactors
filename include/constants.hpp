@@ -20,10 +20,33 @@ constexpr float DT_FACTOR  = .2f;
 
 constexpr int TRAIL_HISTORY_LENGTH = 2;
 
-// constexpr float lorenz_centroid[3] = {0.0f, 0.0f, 25.0f};
+
 constexpr glm::vec3 lorenz_centroid = glm::vec3(0.0f, 0.0f, 25.0f);
-// constexpr float lorenz_half_scale[3] = {10.0f, 30.0f, 20.0f};
+constexpr glm::vec3 lorenz_scaling = glm::vec3(0.6f, 0.6f, 0.6f);
 constexpr glm::vec3 lorenz_half_scale = glm::vec3(10.0f, 30.0f, 20.0f);
 
-constexpr glm::vec3 halvorsen_centroid = glm::vec3(-4.0f, -2.0f, -3.0f);
+constexpr glm::vec3 halvorsen_centroid = glm::vec3(-4.0f, -5.0f, -3.0f);
+constexpr glm::vec3 halvorsen_scaling = glm::vec3(1.0f, 1.0f, 1.0f);
 constexpr glm::vec3 halvorsen_half_scale = glm::vec3(10.0f, 8.0f, 10.0f);
+
+
+
+#ifndef SHADER_DIR
+#define SHADER_DIR "shaders/"
+#endif
+
+#ifndef TEXTURE_DIR
+#define TEXTURE_DIR "resources/textures/"
+#endif
+
+#ifndef MODEL_DIR
+#define MODEL_DIR "resources/models/"
+#endif
+
+const std::string vertexShaderFilePath = std::string(SHADER_DIR) + "shader.vs";
+const std::string fragmentShaderFilePath = std::string(SHADER_DIR) + "shader.fs";
+const std::string lightCubeFilePath = std::string(SHADER_DIR) +"lightCube";
+const std::string backpackFilePath = std::string(SHADER_DIR) + "backpack";
+const std::string fbQuadFilePath = std::string(SHADER_DIR) + "framebuffer_particles";
+const std::string particlesFilePath = std::string(SHADER_DIR) + "particles";
+const std::string particlesTrailFilePath = std::string(SHADER_DIR) + "particles_trail";

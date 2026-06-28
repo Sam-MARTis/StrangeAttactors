@@ -28,6 +28,12 @@ inline float randFloat(const glm::vec2& bounds){
 }
 
 
-GLFWwindow* setupWindow(Camera &cam, int width, int height);
+GLFWwindow* setupWindow( int width, int height);
 std::string readSourceFromFile(const std::string& filepath);
 unsigned int readTextureFromFile(std::string filepath, int& width, int& height, int& nChannels);
+
+struct WindowContext{
+    Camera* cam;
+    int* simType;
+    unsigned int* SSBO;
+};

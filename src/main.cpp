@@ -23,24 +23,24 @@
 #include <assimp/postprocess.h>
 
 
-#ifndef SHADER_DIR
-#define SHADER_DIR "shaders/"
-#endif
+// #ifndef SHADER_DIR
+// #define SHADER_DIR "shaders/"
+// #endif
 
-#ifndef TEXTURE_DIR
-#define TEXTURE_DIR "resources/textures/"
-#endif
+// #ifndef TEXTURE_DIR
+// #define TEXTURE_DIR "resources/textures/"
+// #endif
 
-#ifndef MODEL_DIR
-#define MODEL_DIR "resources/models/"
-#endif
+// #ifndef MODEL_DIR
+// #define MODEL_DIR "resources/models/"
+// #endif
 int main()
 {
     
 
     // glm::vec3 cameraPos = lorenz_centroid + glm::vec3(0.0f, 0.0f, 105.0f);
     // data_in.cam->pos = glm::vec3(-10.0f, -5.0f, 35.0f);
-    glm::vec3 cameraPos = glm::vec3(-10.0f, -5.0f, 35.0f);
+    glm::vec3 cameraPos = glm::vec3(-0.0f, -0.0f, 35.0f);
     glm::vec3 cameraFront = glm::vec3(0.0f, 0.0f, -1.0f);
     glm::vec3 cameraUp = glm::vec3(0.0f, 1.0f, 0.0f);
     glm::vec3 objectPos = glm::vec3(0.0f, 0.0f, -1.0f);
@@ -51,24 +51,18 @@ int main()
     
     
     Camera cam(cameraPos, cameraFront, cameraUp, fov, AR, min_view_dist, max_view_dist);
-    GLFWwindow *window = setupWindow(cam, SCREEN_WIDTH, SCREEN_HEIGHT);
+    GLFWwindow *window = setupWindow(SCREEN_WIDTH, SCREEN_HEIGHT);
     // Add this right after gladLoadGLLoader
-std::cout << "OpenGL Version: " << glGetString(GL_VERSION) << std::endl;
-std::cout << "Renderer: " << glGetString(GL_RENDERER) << std::endl;
-// Right after gladLoadGLLoader
-if(!glCreateBuffers)
-    std::cout << "glCreateBuffers not loaded" << std::endl;
-if(!glNamedBufferStorage)
-    std::cout << "glNamedBufferStorage not loaded" << std::endl;
+    std::cout << "OpenGL Version: " << glGetString(GL_VERSION) << std::endl;
+    std::cout << "Renderer: " << glGetString(GL_RENDERER) << std::endl;
+    // Right after gladLoadGLLoader
+    if(!glCreateBuffers)
+        std::cout << "glCreateBuffers not loaded" << std::endl;
+    if(!glNamedBufferStorage)
+        std::cout << "glNamedBufferStorage not loaded" << std::endl;
     glEnable(GL_DEPTH_TEST);
     // std::cout << std::string(SHADER_DIR) + "shader.vs" << std::endl;
-    const std::string vertexShaderFilePath = std::string(SHADER_DIR) + "shader.vs";
-    const std::string fragmentShaderFilePath = std::string(SHADER_DIR) + "shader.fs";
-    const std::string lightCubeFilePath = std::string(SHADER_DIR) +"lightCube";
-    const std::string backpackFilePath = std::string(SHADER_DIR) + "backpack";
-    const std::string fbQuadFilePath = std::string(SHADER_DIR) + "framebuffer_particles";
-    const std::string particlesFilePath = std::string(SHADER_DIR) + "particles";
-    const std::string particlesTrailFilePath = std::string(SHADER_DIR) + "particles_trail";
+
 
 
     // Shader myShaders = Shader(st, fragmentShaderFilePath);
@@ -91,7 +85,7 @@ if(!glNamedBufferStorage)
     // const float dt = 1.0f / 60.0f;
 
     float prevFrameTime = static_cast<float>(glfwGetTime());
-    std::string backPackFilePath = MODEL_DIR + std::string("backpack/backpack.obj");
+    // std::string backPackFilePath = MODEL_DIR + std::string("backpack/backpack.obj");
     // Model backPack(backPackFilePath);
 
 
@@ -165,7 +159,7 @@ if(!glNamedBufferStorage)
     particlesComputeShader.setExecutionParameters(dispatch_sizes, GL_SHADER_STORAGE_BARRIER_BIT);
     particlesTrailComputeShader.setExecutionParameters(dispatch_sizes, GL_SHADER_STORAGE_BARRIER_BIT);
     
-    unsigned int SSBO;
+    unsigned int particleSSBO;
     unsigned int particleVAO;
     auto checkErr = [](const char* label){
     GLenum err = glGetError();
@@ -173,15 +167,15 @@ if(!glNamedBufferStorage)
         std::cout << "GL Error at " << label << ": " << err << std::endl;
     };
     
-    glCreateBuffers(1, &SSBO);                                                          
-    glNamedBufferStorage(SSBO, sizeof(Particle)*MAX_PARTICLES, particles, GL_DYNAMIC_STORAGE_BIT); 
+    glCreateBuffers(1, &particleSSBO);                                                          
+    glNamedBufferStorage(particleSSBO, sizeof(Particle)*MAX_PARTICLES, particles, GL_DYNAMIC_STORAGE_BIT); 
     glCreateVertexArrays(1, &particleVAO);  
     
     // glVertexArrayVertexBuffer(particleVAO, 0, SSBO, 0, sizeof(Particle));               
     // glVertexArrayAttribFormat(particleVAO, 0, 4, GL_FLOAT, GL_FALSE, offsetof(Particle, position));
     // glVertexArrayAttribBinding(particleVAO, 0, 0);
     // glEnableVertexArrayAttrib(particleVAO, 0);                                          
-    glBindBufferBase(GL_SHADER_STORAGE_BUFFER, 0, SSBO);
+    glBindBufferBase(GL_SHADER_STORAGE_BUFFER, 0, particleSSBO);
     
     
     std::vector<glm::vec4> trailHistory(MAX_PARTICLES*TRAIL_HISTORY_LENGTH);
@@ -251,7 +245,15 @@ if(!glNamedBufferStorage)
     data_in.deltaT = &deltaT;
     data_in.frameCount = &frameCount;
     data_in.simType = &simType;
-    data_in.SSBO = &SSBO;
+    data_in.SSBO = &particleSSBO;
+
+
+    glm::mat4 lorenz_modelMat = glm::mat4(1.0f);
+    lorenz_modelMat = glm::translate(lorenz_modelMat, -lorenz_centroid);
+    lorenz_modelMat = glm::scale(lorenz_modelMat, lorenz_scaling);
+    glm::mat4 halvorsen_modelMat = glm::mat4(1.0f);
+    halvorsen_modelMat = glm::translate(halvorsen_modelMat, -halvorsen_centroid);
+    halvorsen_modelMat = glm::scale(halvorsen_modelMat, halvorsen_scaling);
 
     while (!glfwWindowShouldClose(window))
     {
@@ -266,6 +268,7 @@ if(!glNamedBufferStorage)
         
         processInput(window, cam, deltaT*KEYBOARD_MOVE_SPEED);
         
+        glm::mat4 rotationMat = glm::rotate(glm::mat4(1.0f), glm::radians(frameCount*1.1f), glm::vec3(0.0f, 1.0f, 0.0f));
         
         camInfo.projection = cam.getProjectionMatrix();
         camInfo.view = cam.getViewMatrix();
@@ -307,14 +310,15 @@ if(!glNamedBufferStorage)
         particlesShader.setVec3("lightColour", glm::vec3(0.1f, 0.1f, 0.9f));
         glm::mat4 modelMat = glm::mat4(1.0f);
         if(simType == 0){
-            modelMat = glm::translate(modelMat, lorenz_centroid);
+            modelMat = lorenz_modelMat;
         }
         else if(simType == 1){
-            modelMat = glm::translate(modelMat, halvorsen_centroid);
+            modelMat = halvorsen_modelMat;
         }
         else{
             std::cout<<"ERROR: simType is not 0 or 1"<<std::endl;
         }
+        modelMat =  modelMat*rotationMat;
         // modelMat = 
         particlesShader.setMat4("model", modelMat);
         
@@ -331,16 +335,9 @@ if(!glNamedBufferStorage)
         particlesTrailShader.use();
         particlesTrailShader.setUint("frameCount", frameCount);
         particlesTrailShader.setUint("trailHistoryLength", TRAIL_HISTORY_LENGTH);
-        // if(simType == 0){
-        //     modelMat = glm::translate(modelMat, lorenz_centroid);
-        // }
-        // else if(simType == 1){
-        //     modelMat = glm::translate(modelMat, halvorsen_centroid);
-        // }
-        // else{
-        //     std::cout<<"ERROR: simType is not 0 or 1"<<std::endl;
-        // }
-        // modelMat = 
+
+
+
         particlesTrailShader.setMat4("model", modelMat);
         glBindVertexArray(particleVAO);
         glBindBuffer(GL_DRAW_INDIRECT_BUFFER, cmdBufferSSBO);

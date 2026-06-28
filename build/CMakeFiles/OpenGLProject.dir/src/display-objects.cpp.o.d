@@ -339,9 +339,9 @@ CMakeFiles/OpenGLProject.dir/src/display-objects.cpp.o: \
  /usr/include/assimp/material.inl /usr/include/assimp/anim.h \
  /usr/include/assimp/metadata.h /usr/include/assimp/postprocess.h \
  /home/odin/Code/Strange-Attractors/include/constants.hpp \
- /home/odin/Code/Strange-Attractors/include/imgui.h \
- /home/odin/Code/Strange-Attractors/include/imconfig.h \
- /home/odin/Code/Strange-Attractors/include/imgui_impl_glfw.h \
+ /home/odin/Code/Strange-Attractors/external/imgui/imgui.h \
+ /home/odin/Code/Strange-Attractors/external/imgui/imconfig.h \
+ /home/odin/Code/Strange-Attractors/external/imgui/imgui_impl_glfw.h \
  /home/odin/Code/Strange-Attractors/include/aux.hpp \
  /home/odin/Code/Strange-Attractors/include/glad/glad.h \
  /home/odin/Code/Strange-Attractors/include/KHR/khrplatform.h \

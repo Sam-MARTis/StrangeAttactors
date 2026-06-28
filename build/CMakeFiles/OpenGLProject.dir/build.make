@@ -72,10 +72,108 @@ include CMakeFiles/OpenGLProject.dir/flags.make
 CMakeFiles/OpenGLProject.dir/codegen:
 .PHONY : CMakeFiles/OpenGLProject.dir/codegen
 
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui.cpp.o: CMakeFiles/OpenGLProject.dir/flags.make
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui.cpp.o: /home/odin/Code/Strange-Attractors/external/imgui/imgui.cpp
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui.cpp.o: CMakeFiles/OpenGLProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/odin/Code/Strange-Attractors/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/OpenGLProject.dir/external/imgui/imgui.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLProject.dir/external/imgui/imgui.cpp.o -MF CMakeFiles/OpenGLProject.dir/external/imgui/imgui.cpp.o.d -o CMakeFiles/OpenGLProject.dir/external/imgui/imgui.cpp.o -c /home/odin/Code/Strange-Attractors/external/imgui/imgui.cpp
+
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGLProject.dir/external/imgui/imgui.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/odin/Code/Strange-Attractors/external/imgui/imgui.cpp > CMakeFiles/OpenGLProject.dir/external/imgui/imgui.cpp.i
+
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGLProject.dir/external/imgui/imgui.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/odin/Code/Strange-Attractors/external/imgui/imgui.cpp -o CMakeFiles/OpenGLProject.dir/external/imgui/imgui.cpp.s
+
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui_demo.cpp.o: CMakeFiles/OpenGLProject.dir/flags.make
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui_demo.cpp.o: /home/odin/Code/Strange-Attractors/external/imgui/imgui_demo.cpp
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui_demo.cpp.o: CMakeFiles/OpenGLProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/odin/Code/Strange-Attractors/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OpenGLProject.dir/external/imgui/imgui_demo.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLProject.dir/external/imgui/imgui_demo.cpp.o -MF CMakeFiles/OpenGLProject.dir/external/imgui/imgui_demo.cpp.o.d -o CMakeFiles/OpenGLProject.dir/external/imgui/imgui_demo.cpp.o -c /home/odin/Code/Strange-Attractors/external/imgui/imgui_demo.cpp
+
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui_demo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGLProject.dir/external/imgui/imgui_demo.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/odin/Code/Strange-Attractors/external/imgui/imgui_demo.cpp > CMakeFiles/OpenGLProject.dir/external/imgui/imgui_demo.cpp.i
+
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui_demo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGLProject.dir/external/imgui/imgui_demo.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/odin/Code/Strange-Attractors/external/imgui/imgui_demo.cpp -o CMakeFiles/OpenGLProject.dir/external/imgui/imgui_demo.cpp.s
+
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui_draw.cpp.o: CMakeFiles/OpenGLProject.dir/flags.make
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui_draw.cpp.o: /home/odin/Code/Strange-Attractors/external/imgui/imgui_draw.cpp
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui_draw.cpp.o: CMakeFiles/OpenGLProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/odin/Code/Strange-Attractors/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/OpenGLProject.dir/external/imgui/imgui_draw.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLProject.dir/external/imgui/imgui_draw.cpp.o -MF CMakeFiles/OpenGLProject.dir/external/imgui/imgui_draw.cpp.o.d -o CMakeFiles/OpenGLProject.dir/external/imgui/imgui_draw.cpp.o -c /home/odin/Code/Strange-Attractors/external/imgui/imgui_draw.cpp
+
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui_draw.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGLProject.dir/external/imgui/imgui_draw.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/odin/Code/Strange-Attractors/external/imgui/imgui_draw.cpp > CMakeFiles/OpenGLProject.dir/external/imgui/imgui_draw.cpp.i
+
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui_draw.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGLProject.dir/external/imgui/imgui_draw.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/odin/Code/Strange-Attractors/external/imgui/imgui_draw.cpp -o CMakeFiles/OpenGLProject.dir/external/imgui/imgui_draw.cpp.s
+
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui_impl_glfw.cpp.o: CMakeFiles/OpenGLProject.dir/flags.make
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui_impl_glfw.cpp.o: /home/odin/Code/Strange-Attractors/external/imgui/imgui_impl_glfw.cpp
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui_impl_glfw.cpp.o: CMakeFiles/OpenGLProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/odin/Code/Strange-Attractors/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/OpenGLProject.dir/external/imgui/imgui_impl_glfw.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLProject.dir/external/imgui/imgui_impl_glfw.cpp.o -MF CMakeFiles/OpenGLProject.dir/external/imgui/imgui_impl_glfw.cpp.o.d -o CMakeFiles/OpenGLProject.dir/external/imgui/imgui_impl_glfw.cpp.o -c /home/odin/Code/Strange-Attractors/external/imgui/imgui_impl_glfw.cpp
+
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui_impl_glfw.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGLProject.dir/external/imgui/imgui_impl_glfw.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/odin/Code/Strange-Attractors/external/imgui/imgui_impl_glfw.cpp > CMakeFiles/OpenGLProject.dir/external/imgui/imgui_impl_glfw.cpp.i
+
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui_impl_glfw.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGLProject.dir/external/imgui/imgui_impl_glfw.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/odin/Code/Strange-Attractors/external/imgui/imgui_impl_glfw.cpp -o CMakeFiles/OpenGLProject.dir/external/imgui/imgui_impl_glfw.cpp.s
+
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui_impl_opengl3.cpp.o: CMakeFiles/OpenGLProject.dir/flags.make
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui_impl_opengl3.cpp.o: /home/odin/Code/Strange-Attractors/external/imgui/imgui_impl_opengl3.cpp
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui_impl_opengl3.cpp.o: CMakeFiles/OpenGLProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/odin/Code/Strange-Attractors/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/OpenGLProject.dir/external/imgui/imgui_impl_opengl3.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLProject.dir/external/imgui/imgui_impl_opengl3.cpp.o -MF CMakeFiles/OpenGLProject.dir/external/imgui/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/OpenGLProject.dir/external/imgui/imgui_impl_opengl3.cpp.o -c /home/odin/Code/Strange-Attractors/external/imgui/imgui_impl_opengl3.cpp
+
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui_impl_opengl3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGLProject.dir/external/imgui/imgui_impl_opengl3.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/odin/Code/Strange-Attractors/external/imgui/imgui_impl_opengl3.cpp > CMakeFiles/OpenGLProject.dir/external/imgui/imgui_impl_opengl3.cpp.i
+
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui_impl_opengl3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGLProject.dir/external/imgui/imgui_impl_opengl3.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/odin/Code/Strange-Attractors/external/imgui/imgui_impl_opengl3.cpp -o CMakeFiles/OpenGLProject.dir/external/imgui/imgui_impl_opengl3.cpp.s
+
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui_tables.cpp.o: CMakeFiles/OpenGLProject.dir/flags.make
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui_tables.cpp.o: /home/odin/Code/Strange-Attractors/external/imgui/imgui_tables.cpp
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui_tables.cpp.o: CMakeFiles/OpenGLProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/odin/Code/Strange-Attractors/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/OpenGLProject.dir/external/imgui/imgui_tables.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLProject.dir/external/imgui/imgui_tables.cpp.o -MF CMakeFiles/OpenGLProject.dir/external/imgui/imgui_tables.cpp.o.d -o CMakeFiles/OpenGLProject.dir/external/imgui/imgui_tables.cpp.o -c /home/odin/Code/Strange-Attractors/external/imgui/imgui_tables.cpp
+
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui_tables.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGLProject.dir/external/imgui/imgui_tables.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/odin/Code/Strange-Attractors/external/imgui/imgui_tables.cpp > CMakeFiles/OpenGLProject.dir/external/imgui/imgui_tables.cpp.i
+
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui_tables.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGLProject.dir/external/imgui/imgui_tables.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/odin/Code/Strange-Attractors/external/imgui/imgui_tables.cpp -o CMakeFiles/OpenGLProject.dir/external/imgui/imgui_tables.cpp.s
+
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui_widgets.cpp.o: CMakeFiles/OpenGLProject.dir/flags.make
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui_widgets.cpp.o: /home/odin/Code/Strange-Attractors/external/imgui/imgui_widgets.cpp
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui_widgets.cpp.o: CMakeFiles/OpenGLProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/odin/Code/Strange-Attractors/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/OpenGLProject.dir/external/imgui/imgui_widgets.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLProject.dir/external/imgui/imgui_widgets.cpp.o -MF CMakeFiles/OpenGLProject.dir/external/imgui/imgui_widgets.cpp.o.d -o CMakeFiles/OpenGLProject.dir/external/imgui/imgui_widgets.cpp.o -c /home/odin/Code/Strange-Attractors/external/imgui/imgui_widgets.cpp
+
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui_widgets.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGLProject.dir/external/imgui/imgui_widgets.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/odin/Code/Strange-Attractors/external/imgui/imgui_widgets.cpp > CMakeFiles/OpenGLProject.dir/external/imgui/imgui_widgets.cpp.i
+
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui_widgets.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGLProject.dir/external/imgui/imgui_widgets.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/odin/Code/Strange-Attractors/external/imgui/imgui_widgets.cpp -o CMakeFiles/OpenGLProject.dir/external/imgui/imgui_widgets.cpp.s
+
 CMakeFiles/OpenGLProject.dir/src/aux.cpp.o: CMakeFiles/OpenGLProject.dir/flags.make
 CMakeFiles/OpenGLProject.dir/src/aux.cpp.o: /home/odin/Code/Strange-Attractors/src/aux.cpp
 CMakeFiles/OpenGLProject.dir/src/aux.cpp.o: CMakeFiles/OpenGLProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/odin/Code/Strange-Attractors/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/OpenGLProject.dir/src/aux.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/odin/Code/Strange-Attractors/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/OpenGLProject.dir/src/aux.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLProject.dir/src/aux.cpp.o -MF CMakeFiles/OpenGLProject.dir/src/aux.cpp.o.d -o CMakeFiles/OpenGLProject.dir/src/aux.cpp.o -c /home/odin/Code/Strange-Attractors/src/aux.cpp
 
 CMakeFiles/OpenGLProject.dir/src/aux.cpp.i: cmake_force
@@ -89,7 +187,7 @@ CMakeFiles/OpenGLProject.dir/src/aux.cpp.s: cmake_force
 CMakeFiles/OpenGLProject.dir/src/display-objects.cpp.o: CMakeFiles/OpenGLProject.dir/flags.make
 CMakeFiles/OpenGLProject.dir/src/display-objects.cpp.o: /home/odin/Code/Strange-Attractors/src/display-objects.cpp
 CMakeFiles/OpenGLProject.dir/src/display-objects.cpp.o: CMakeFiles/OpenGLProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/odin/Code/Strange-Attractors/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OpenGLProject.dir/src/display-objects.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/odin/Code/Strange-Attractors/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/OpenGLProject.dir/src/display-objects.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLProject.dir/src/display-objects.cpp.o -MF CMakeFiles/OpenGLProject.dir/src/display-objects.cpp.o.d -o CMakeFiles/OpenGLProject.dir/src/display-objects.cpp.o -c /home/odin/Code/Strange-Attractors/src/display-objects.cpp
 
 CMakeFiles/OpenGLProject.dir/src/display-objects.cpp.i: cmake_force
@@ -103,7 +201,7 @@ CMakeFiles/OpenGLProject.dir/src/display-objects.cpp.s: cmake_force
 CMakeFiles/OpenGLProject.dir/src/glad.c.o: CMakeFiles/OpenGLProject.dir/flags.make
 CMakeFiles/OpenGLProject.dir/src/glad.c.o: /home/odin/Code/Strange-Attractors/src/glad.c
 CMakeFiles/OpenGLProject.dir/src/glad.c.o: CMakeFiles/OpenGLProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/odin/Code/Strange-Attractors/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/OpenGLProject.dir/src/glad.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/odin/Code/Strange-Attractors/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/OpenGLProject.dir/src/glad.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/OpenGLProject.dir/src/glad.c.o -MF CMakeFiles/OpenGLProject.dir/src/glad.c.o.d -o CMakeFiles/OpenGLProject.dir/src/glad.c.o -c /home/odin/Code/Strange-Attractors/src/glad.c
 
 CMakeFiles/OpenGLProject.dir/src/glad.c.i: cmake_force
@@ -113,104 +211,6 @@ CMakeFiles/OpenGLProject.dir/src/glad.c.i: cmake_force
 CMakeFiles/OpenGLProject.dir/src/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/OpenGLProject.dir/src/glad.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/odin/Code/Strange-Attractors/src/glad.c -o CMakeFiles/OpenGLProject.dir/src/glad.c.s
-
-CMakeFiles/OpenGLProject.dir/src/imgui.cpp.o: CMakeFiles/OpenGLProject.dir/flags.make
-CMakeFiles/OpenGLProject.dir/src/imgui.cpp.o: /home/odin/Code/Strange-Attractors/src/imgui.cpp
-CMakeFiles/OpenGLProject.dir/src/imgui.cpp.o: CMakeFiles/OpenGLProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/odin/Code/Strange-Attractors/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/OpenGLProject.dir/src/imgui.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLProject.dir/src/imgui.cpp.o -MF CMakeFiles/OpenGLProject.dir/src/imgui.cpp.o.d -o CMakeFiles/OpenGLProject.dir/src/imgui.cpp.o -c /home/odin/Code/Strange-Attractors/src/imgui.cpp
-
-CMakeFiles/OpenGLProject.dir/src/imgui.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGLProject.dir/src/imgui.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/odin/Code/Strange-Attractors/src/imgui.cpp > CMakeFiles/OpenGLProject.dir/src/imgui.cpp.i
-
-CMakeFiles/OpenGLProject.dir/src/imgui.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGLProject.dir/src/imgui.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/odin/Code/Strange-Attractors/src/imgui.cpp -o CMakeFiles/OpenGLProject.dir/src/imgui.cpp.s
-
-CMakeFiles/OpenGLProject.dir/src/imgui_demo.cpp.o: CMakeFiles/OpenGLProject.dir/flags.make
-CMakeFiles/OpenGLProject.dir/src/imgui_demo.cpp.o: /home/odin/Code/Strange-Attractors/src/imgui_demo.cpp
-CMakeFiles/OpenGLProject.dir/src/imgui_demo.cpp.o: CMakeFiles/OpenGLProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/odin/Code/Strange-Attractors/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/OpenGLProject.dir/src/imgui_demo.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLProject.dir/src/imgui_demo.cpp.o -MF CMakeFiles/OpenGLProject.dir/src/imgui_demo.cpp.o.d -o CMakeFiles/OpenGLProject.dir/src/imgui_demo.cpp.o -c /home/odin/Code/Strange-Attractors/src/imgui_demo.cpp
-
-CMakeFiles/OpenGLProject.dir/src/imgui_demo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGLProject.dir/src/imgui_demo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/odin/Code/Strange-Attractors/src/imgui_demo.cpp > CMakeFiles/OpenGLProject.dir/src/imgui_demo.cpp.i
-
-CMakeFiles/OpenGLProject.dir/src/imgui_demo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGLProject.dir/src/imgui_demo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/odin/Code/Strange-Attractors/src/imgui_demo.cpp -o CMakeFiles/OpenGLProject.dir/src/imgui_demo.cpp.s
-
-CMakeFiles/OpenGLProject.dir/src/imgui_draw.cpp.o: CMakeFiles/OpenGLProject.dir/flags.make
-CMakeFiles/OpenGLProject.dir/src/imgui_draw.cpp.o: /home/odin/Code/Strange-Attractors/src/imgui_draw.cpp
-CMakeFiles/OpenGLProject.dir/src/imgui_draw.cpp.o: CMakeFiles/OpenGLProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/odin/Code/Strange-Attractors/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/OpenGLProject.dir/src/imgui_draw.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLProject.dir/src/imgui_draw.cpp.o -MF CMakeFiles/OpenGLProject.dir/src/imgui_draw.cpp.o.d -o CMakeFiles/OpenGLProject.dir/src/imgui_draw.cpp.o -c /home/odin/Code/Strange-Attractors/src/imgui_draw.cpp
-
-CMakeFiles/OpenGLProject.dir/src/imgui_draw.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGLProject.dir/src/imgui_draw.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/odin/Code/Strange-Attractors/src/imgui_draw.cpp > CMakeFiles/OpenGLProject.dir/src/imgui_draw.cpp.i
-
-CMakeFiles/OpenGLProject.dir/src/imgui_draw.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGLProject.dir/src/imgui_draw.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/odin/Code/Strange-Attractors/src/imgui_draw.cpp -o CMakeFiles/OpenGLProject.dir/src/imgui_draw.cpp.s
-
-CMakeFiles/OpenGLProject.dir/src/imgui_impl_glfw.cpp.o: CMakeFiles/OpenGLProject.dir/flags.make
-CMakeFiles/OpenGLProject.dir/src/imgui_impl_glfw.cpp.o: /home/odin/Code/Strange-Attractors/src/imgui_impl_glfw.cpp
-CMakeFiles/OpenGLProject.dir/src/imgui_impl_glfw.cpp.o: CMakeFiles/OpenGLProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/odin/Code/Strange-Attractors/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/OpenGLProject.dir/src/imgui_impl_glfw.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLProject.dir/src/imgui_impl_glfw.cpp.o -MF CMakeFiles/OpenGLProject.dir/src/imgui_impl_glfw.cpp.o.d -o CMakeFiles/OpenGLProject.dir/src/imgui_impl_glfw.cpp.o -c /home/odin/Code/Strange-Attractors/src/imgui_impl_glfw.cpp
-
-CMakeFiles/OpenGLProject.dir/src/imgui_impl_glfw.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGLProject.dir/src/imgui_impl_glfw.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/odin/Code/Strange-Attractors/src/imgui_impl_glfw.cpp > CMakeFiles/OpenGLProject.dir/src/imgui_impl_glfw.cpp.i
-
-CMakeFiles/OpenGLProject.dir/src/imgui_impl_glfw.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGLProject.dir/src/imgui_impl_glfw.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/odin/Code/Strange-Attractors/src/imgui_impl_glfw.cpp -o CMakeFiles/OpenGLProject.dir/src/imgui_impl_glfw.cpp.s
-
-CMakeFiles/OpenGLProject.dir/src/imgui_impl_opengl3.cpp.o: CMakeFiles/OpenGLProject.dir/flags.make
-CMakeFiles/OpenGLProject.dir/src/imgui_impl_opengl3.cpp.o: /home/odin/Code/Strange-Attractors/src/imgui_impl_opengl3.cpp
-CMakeFiles/OpenGLProject.dir/src/imgui_impl_opengl3.cpp.o: CMakeFiles/OpenGLProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/odin/Code/Strange-Attractors/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/OpenGLProject.dir/src/imgui_impl_opengl3.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLProject.dir/src/imgui_impl_opengl3.cpp.o -MF CMakeFiles/OpenGLProject.dir/src/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/OpenGLProject.dir/src/imgui_impl_opengl3.cpp.o -c /home/odin/Code/Strange-Attractors/src/imgui_impl_opengl3.cpp
-
-CMakeFiles/OpenGLProject.dir/src/imgui_impl_opengl3.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGLProject.dir/src/imgui_impl_opengl3.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/odin/Code/Strange-Attractors/src/imgui_impl_opengl3.cpp > CMakeFiles/OpenGLProject.dir/src/imgui_impl_opengl3.cpp.i
-
-CMakeFiles/OpenGLProject.dir/src/imgui_impl_opengl3.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGLProject.dir/src/imgui_impl_opengl3.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/odin/Code/Strange-Attractors/src/imgui_impl_opengl3.cpp -o CMakeFiles/OpenGLProject.dir/src/imgui_impl_opengl3.cpp.s
-
-CMakeFiles/OpenGLProject.dir/src/imgui_tables.cpp.o: CMakeFiles/OpenGLProject.dir/flags.make
-CMakeFiles/OpenGLProject.dir/src/imgui_tables.cpp.o: /home/odin/Code/Strange-Attractors/src/imgui_tables.cpp
-CMakeFiles/OpenGLProject.dir/src/imgui_tables.cpp.o: CMakeFiles/OpenGLProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/odin/Code/Strange-Attractors/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/OpenGLProject.dir/src/imgui_tables.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLProject.dir/src/imgui_tables.cpp.o -MF CMakeFiles/OpenGLProject.dir/src/imgui_tables.cpp.o.d -o CMakeFiles/OpenGLProject.dir/src/imgui_tables.cpp.o -c /home/odin/Code/Strange-Attractors/src/imgui_tables.cpp
-
-CMakeFiles/OpenGLProject.dir/src/imgui_tables.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGLProject.dir/src/imgui_tables.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/odin/Code/Strange-Attractors/src/imgui_tables.cpp > CMakeFiles/OpenGLProject.dir/src/imgui_tables.cpp.i
-
-CMakeFiles/OpenGLProject.dir/src/imgui_tables.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGLProject.dir/src/imgui_tables.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/odin/Code/Strange-Attractors/src/imgui_tables.cpp -o CMakeFiles/OpenGLProject.dir/src/imgui_tables.cpp.s
-
-CMakeFiles/OpenGLProject.dir/src/imgui_widgets.cpp.o: CMakeFiles/OpenGLProject.dir/flags.make
-CMakeFiles/OpenGLProject.dir/src/imgui_widgets.cpp.o: /home/odin/Code/Strange-Attractors/src/imgui_widgets.cpp
-CMakeFiles/OpenGLProject.dir/src/imgui_widgets.cpp.o: CMakeFiles/OpenGLProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/odin/Code/Strange-Attractors/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/OpenGLProject.dir/src/imgui_widgets.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLProject.dir/src/imgui_widgets.cpp.o -MF CMakeFiles/OpenGLProject.dir/src/imgui_widgets.cpp.o.d -o CMakeFiles/OpenGLProject.dir/src/imgui_widgets.cpp.o -c /home/odin/Code/Strange-Attractors/src/imgui_widgets.cpp
-
-CMakeFiles/OpenGLProject.dir/src/imgui_widgets.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGLProject.dir/src/imgui_widgets.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/odin/Code/Strange-Attractors/src/imgui_widgets.cpp > CMakeFiles/OpenGLProject.dir/src/imgui_widgets.cpp.i
-
-CMakeFiles/OpenGLProject.dir/src/imgui_widgets.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGLProject.dir/src/imgui_widgets.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/odin/Code/Strange-Attractors/src/imgui_widgets.cpp -o CMakeFiles/OpenGLProject.dir/src/imgui_widgets.cpp.s
 
 CMakeFiles/OpenGLProject.dir/src/main.cpp.o: CMakeFiles/OpenGLProject.dir/flags.make
 CMakeFiles/OpenGLProject.dir/src/main.cpp.o: /home/odin/Code/Strange-Attractors/src/main.cpp
@@ -270,16 +270,16 @@ CMakeFiles/OpenGLProject.dir/src/shaders.cpp.s: cmake_force
 
 # Object files for target OpenGLProject
 OpenGLProject_OBJECTS = \
+"CMakeFiles/OpenGLProject.dir/external/imgui/imgui.cpp.o" \
+"CMakeFiles/OpenGLProject.dir/external/imgui/imgui_demo.cpp.o" \
+"CMakeFiles/OpenGLProject.dir/external/imgui/imgui_draw.cpp.o" \
+"CMakeFiles/OpenGLProject.dir/external/imgui/imgui_impl_glfw.cpp.o" \
+"CMakeFiles/OpenGLProject.dir/external/imgui/imgui_impl_opengl3.cpp.o" \
+"CMakeFiles/OpenGLProject.dir/external/imgui/imgui_tables.cpp.o" \
+"CMakeFiles/OpenGLProject.dir/external/imgui/imgui_widgets.cpp.o" \
 "CMakeFiles/OpenGLProject.dir/src/aux.cpp.o" \
 "CMakeFiles/OpenGLProject.dir/src/display-objects.cpp.o" \
 "CMakeFiles/OpenGLProject.dir/src/glad.c.o" \
-"CMakeFiles/OpenGLProject.dir/src/imgui.cpp.o" \
-"CMakeFiles/OpenGLProject.dir/src/imgui_demo.cpp.o" \
-"CMakeFiles/OpenGLProject.dir/src/imgui_draw.cpp.o" \
-"CMakeFiles/OpenGLProject.dir/src/imgui_impl_glfw.cpp.o" \
-"CMakeFiles/OpenGLProject.dir/src/imgui_impl_opengl3.cpp.o" \
-"CMakeFiles/OpenGLProject.dir/src/imgui_tables.cpp.o" \
-"CMakeFiles/OpenGLProject.dir/src/imgui_widgets.cpp.o" \
 "CMakeFiles/OpenGLProject.dir/src/main.cpp.o" \
 "CMakeFiles/OpenGLProject.dir/src/particles.cpp.o" \
 "CMakeFiles/OpenGLProject.dir/src/processing-objects.cpp.o" \
@@ -288,16 +288,16 @@ OpenGLProject_OBJECTS = \
 # External object files for target OpenGLProject
 OpenGLProject_EXTERNAL_OBJECTS =
 
+OpenGLProject: CMakeFiles/OpenGLProject.dir/external/imgui/imgui.cpp.o
+OpenGLProject: CMakeFiles/OpenGLProject.dir/external/imgui/imgui_demo.cpp.o
+OpenGLProject: CMakeFiles/OpenGLProject.dir/external/imgui/imgui_draw.cpp.o
+OpenGLProject: CMakeFiles/OpenGLProject.dir/external/imgui/imgui_impl_glfw.cpp.o
+OpenGLProject: CMakeFiles/OpenGLProject.dir/external/imgui/imgui_impl_opengl3.cpp.o
+OpenGLProject: CMakeFiles/OpenGLProject.dir/external/imgui/imgui_tables.cpp.o
+OpenGLProject: CMakeFiles/OpenGLProject.dir/external/imgui/imgui_widgets.cpp.o
 OpenGLProject: CMakeFiles/OpenGLProject.dir/src/aux.cpp.o
 OpenGLProject: CMakeFiles/OpenGLProject.dir/src/display-objects.cpp.o
 OpenGLProject: CMakeFiles/OpenGLProject.dir/src/glad.c.o
-OpenGLProject: CMakeFiles/OpenGLProject.dir/src/imgui.cpp.o
-OpenGLProject: CMakeFiles/OpenGLProject.dir/src/imgui_demo.cpp.o
-OpenGLProject: CMakeFiles/OpenGLProject.dir/src/imgui_draw.cpp.o
-OpenGLProject: CMakeFiles/OpenGLProject.dir/src/imgui_impl_glfw.cpp.o
-OpenGLProject: CMakeFiles/OpenGLProject.dir/src/imgui_impl_opengl3.cpp.o
-OpenGLProject: CMakeFiles/OpenGLProject.dir/src/imgui_tables.cpp.o
-OpenGLProject: CMakeFiles/OpenGLProject.dir/src/imgui_widgets.cpp.o
 OpenGLProject: CMakeFiles/OpenGLProject.dir/src/main.cpp.o
 OpenGLProject: CMakeFiles/OpenGLProject.dir/src/particles.cpp.o
 OpenGLProject: CMakeFiles/OpenGLProject.dir/src/processing-objects.cpp.o

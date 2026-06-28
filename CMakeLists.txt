@@ -4,7 +4,7 @@ project(OpenGLProject)
 
 set(CMAKE_CXX_STANDARD 17)
 
-file(GLOB_RECURSE SOURCES "src/*.cpp" "src/glad.c")
+file(GLOB_RECURSE SOURCES "src/*.cpp" "src/glad.c" "external/imgui/*.cpp")
 
 add_executable(${PROJECT_NAME} ${SOURCES})
 
@@ -17,6 +17,7 @@ target_compile_definitions(${PROJECT_NAME} PRIVATE
 )
 target_include_directories(${PROJECT_NAME} PRIVATE
     include/   
+    external/imgui/
 )
 
 find_package(glm REQUIRED)

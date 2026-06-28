@@ -102,7 +102,7 @@ void renderImGuiMenu(ImGUIData_In& data_in) {
         *(data_in.simType) = 0; 
         
         // data_in.cam->pos = lorenz_centroid + glm::vec3(0.0f, 0.0f, 105.0f);
-        data_in.cam->pos = glm::vec3(0.0f, 0.0f, 135.0f);
+        // data_in.cam->pos = glm::vec3(0.0f, 0.0f, 135.0f);
 
         
         Particle* particles = initializeRandomParticlesCentroids(
@@ -124,7 +124,7 @@ void renderImGuiMenu(ImGUIData_In& data_in) {
     if (ImGui::Button("Halvorsen")) {
         *(data_in.simType) = 1; 
         // data_in.cam->pos = halvorsen_centroid + glm::vec3(0.0f, 0.0f, 35.0f);
-        data_in.cam->pos = glm::vec3(-10.0f, -5.0f, 35.0f);
+        // data_in.cam->pos = glm::vec3(-10.0f, -5.0f, 35.0f);
 
         Particle* particles = initializeRandomParticlesCentroids(
             MAX_PARTICLES, halvorsen_centroid, halvorsen_half_scale);
@@ -138,6 +138,6 @@ void renderImGuiMenu(ImGUIData_In& data_in) {
 
         delete[] particles;
     }
-    data_in.cam->recalculateViewMatrix();
+    // data_in.cam->recalculateViewMatrix();
 }
     

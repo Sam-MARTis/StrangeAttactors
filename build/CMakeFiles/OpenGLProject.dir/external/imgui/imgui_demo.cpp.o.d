@@ -1,8 +1,8 @@
-CMakeFiles/OpenGLProject.dir/src/imgui_demo.cpp.o: \
- /home/odin/Code/Strange-Attractors/src/imgui_demo.cpp \
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui_demo.cpp.o: \
+ /home/odin/Code/Strange-Attractors/external/imgui/imgui_demo.cpp \
  /usr/include/stdc-predef.h \
- /home/odin/Code/Strange-Attractors/include/imgui.h \
- /home/odin/Code/Strange-Attractors/include/imconfig.h \
+ /home/odin/Code/Strange-Attractors/external/imgui/imgui.h \
+ /home/odin/Code/Strange-Attractors/external/imgui/imconfig.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h /usr/include/string.h \

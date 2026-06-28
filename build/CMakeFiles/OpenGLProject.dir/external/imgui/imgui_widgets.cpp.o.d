@@ -1,8 +1,8 @@
-CMakeFiles/OpenGLProject.dir/src/imgui_widgets.cpp.o: \
- /home/odin/Code/Strange-Attractors/src/imgui_widgets.cpp \
+CMakeFiles/OpenGLProject.dir/external/imgui/imgui_widgets.cpp.o: \
+ /home/odin/Code/Strange-Attractors/external/imgui/imgui_widgets.cpp \
  /usr/include/stdc-predef.h \
- /home/odin/Code/Strange-Attractors/include/imgui.h \
- /home/odin/Code/Strange-Attractors/include/imconfig.h \
+ /home/odin/Code/Strange-Attractors/external/imgui/imgui.h \
+ /home/odin/Code/Strange-Attractors/external/imgui/imconfig.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h /usr/include/string.h \
@@ -17,7 +17,7 @@ CMakeFiles/OpenGLProject.dir/src/imgui_widgets.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/strings.h /usr/include/assert.h \
- /home/odin/Code/Strange-Attractors/include/imgui_internal.h \
+ /home/odin/Code/Strange-Attractors/external/imgui/imgui_internal.h \
  /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/types.h \
  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
  /usr/include/x86_64-linux-gnu/bits/time64.h \
@@ -207,4 +207,4 @@ CMakeFiles/OpenGLProject.dir/src/imgui_widgets.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /home/odin/Code/Strange-Attractors/include/imstb_textedit.h
+ /home/odin/Code/Strange-Attractors/external/imgui/imstb_textedit.h

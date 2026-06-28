@@ -397,7 +397,7 @@ CMakeFiles/OpenGLProject.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/erase_if.h \
  /home/odin/Code/Strange-Attractors/include/shaders.hpp \
  /home/odin/Code/Strange-Attractors/include/particles.hpp \
- /home/odin/Code/Strange-Attractors/include/imgui.h \
- /home/odin/Code/Strange-Attractors/include/imconfig.h \
- /home/odin/Code/Strange-Attractors/include/imgui_impl_glfw.h \
- /home/odin/Code/Strange-Attractors/include/imgui_impl_opengl3.h
+ /home/odin/Code/Strange-Attractors/external/imgui/imgui.h \
+ /home/odin/Code/Strange-Attractors/external/imgui/imconfig.h \
+ /home/odin/Code/Strange-Attractors/external/imgui/imgui_impl_glfw.h \
+ /home/odin/Code/Strange-Attractors/external/imgui/imgui_impl_opengl3.h
