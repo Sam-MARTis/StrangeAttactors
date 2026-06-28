@@ -11,6 +11,7 @@
 #include "aux.hpp"
 #include "display-objects.hpp"
 #include "constants.hpp"
+#include "particles.hpp"
 
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
@@ -39,6 +40,29 @@ void processInput(GLFWwindow *window, Camera& camera, float ds)
     if(W|A|S|D) camera.move(movementVec*ds);   
 }
 
+glm::vec3 computeCentroid(unsigned int SSBO, glm::vec3& boundingBoxMin, glm::vec3& boundingBoxMax){
+    Particle* readData = new Particle[MAX_PARTICLES];
+    glGetNamedBufferSubData(SSBO, 0, sizeof(Particle)*MAX_PARTICLES, readData);
+    glm::vec3 centroid(0.0f, 0.0f, 0.0f);
+    unsigned int count = 0;
+    for(unsigned int i=0; i<MAX_PARTICLES; i++){    
+        Particle& particle = readData[i];
+        glm::vec3 pos = glm::vec3(particle.position);
+        if(pos.x >= boundingBoxMin.x && pos.x <= boundingBoxMax.x &&
+           pos.y >= boundingBoxMin.y && pos.y <= boundingBoxMax.y &&
+           pos.z >= boundingBoxMin.z && pos.z <= boundingBoxMax.z){
+            centroid += pos;
+            count++;
+        }
+        // centroid += glm::vec3(readData[i].position);
+    }
+    if(count > 0){
+        centroid /= static_cast<float>(count);
+    }
+    delete[] readData;
+    return centroid;
+}
+
 void framebuffer_size_callback(GLFWwindow* window, int width, int height){
     glViewport(0, 0, width, height);
 }
@@ -49,34 +73,40 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height){
 
 void mouseButtonCallback(GLFWwindow* window, int button, int action, int mods) {
     // Camera* cam = static_cast<Camera *>(glfwGetWindowUserPointer(window));
+    WindowContext* context = static_cast<WindowContext *>(glfwGetWindowUserPointer(window));
+    Camera* cam = context->cam;
 
-    // if (button == GLFW_MOUSE_BUTTON_LEFT) {
-    //     if (action == GLFW_PRESS) {
-    //         cam->isDragging = true;
-    //         double lastX, lastY;
-    //         glfwGetCursorPos(window, &lastX, &lastY);
-    //         cam->mousePosX = lastX;
-    //         cam->mousePosY = lastY;
-    //     } else if (action == GLFW_RELEASE) {
-    //         cam->isDragging = false;
-    //     }
-    // }
+    if (button == GLFW_MOUSE_BUTTON_LEFT) {
+        if (action == GLFW_PRESS) {
+            cam->isDragging = true;
+            double lastX, lastY;
+            glfwGetCursorPos(window, &lastX, &lastY);
+            cam->mousePosX = lastX;
+            cam->mousePosY = lastY;
+        } else if (action == GLFW_RELEASE) {
+            cam->isDragging = false;
+        }
+    }
 }
 
 void cursorPosCallback(GLFWwindow* window, double xpos, double ypos) {
     // Camera* cam = static_cast<Camera *>(glfwGetWindowUserPointer(window));
-    // if (!cam->isDragging) return;
+    WindowContext* context = static_cast<WindowContext *>(glfwGetWindowUserPointer(window));
+    Camera* cam = context->cam;
+    if (!cam->isDragging) return;
 
-    // double dx = clamp(-(xpos - cam->mousePosX), -MAX_DS, MAX_DS);
-    // double dy = clamp((ypos - cam->mousePosY), -MAX_DS, MAX_DS);
+    double dx = clamp(-(xpos - cam->mousePosX), -MAX_DS, MAX_DS);
+    double dy = clamp((ypos - cam->mousePosY), -MAX_DS, MAX_DS);
     
-    // cam->mousePosX = xpos;
-    // cam->mousePosY = ypos;
-    // cam->handleMouseMove(dx, dy);
+    cam->mousePosX = xpos;
+    cam->mousePosY = ypos;
+    cam->handleMouseMove(dx, dy);
 }
 void mouseScrollCallback(GLFWwindow* window, double xoffset, double yoffset){
+    WindowContext* context = static_cast<WindowContext *>(glfwGetWindowUserPointer(window));
+    Camera* cam = context->cam;
     // Camera* cam = static_cast<Camera *>(glfwGetWindowUserPointer(window));
-    // cam->handleMouseScroll(yoffset);
+    cam->handleMouseScroll(yoffset);
 }
 
 GLFWwindow* setupWindow(int width, int height){

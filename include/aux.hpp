@@ -37,3 +37,5 @@ struct WindowContext{
     int* simType;
     unsigned int* SSBO;
 };
+
+glm::vec3 computeCentroid(unsigned int SSBO, glm::vec3& boundingBoxMin, glm::vec3& boundingBoxMax);

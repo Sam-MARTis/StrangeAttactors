@@ -25,7 +25,7 @@ constexpr glm::vec3 lorenz_centroid = glm::vec3(0.0f, 0.0f, 25.0f);
 constexpr glm::vec3 lorenz_scaling = glm::vec3(0.6f, 0.6f, 0.6f);
 constexpr glm::vec3 lorenz_half_scale = glm::vec3(10.0f, 30.0f, 20.0f);
 
-constexpr glm::vec3 halvorsen_centroid = glm::vec3(-4.0f, -5.0f, -3.0f);
+constexpr glm::vec3 halvorsen_centroid = glm::vec3(-8.0f, -5.0f, -5.0f);
 constexpr glm::vec3 halvorsen_scaling = glm::vec3(1.0f, 1.0f, 1.0f);
 constexpr glm::vec3 halvorsen_half_scale = glm::vec3(10.0f, 8.0f, 10.0f);
 
