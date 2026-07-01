@@ -155,7 +155,7 @@ int main()
     // Particle* particles = initializeRandomParticlesCentroids(MAX_PARTICLES, lorenz_centroid, lorenz_half_scale);
     Particle* particles = initializeRandomParticlesCentroids(MAX_PARTICLES, halvorsen_centroid, halvorsen_half_scale);
     
-    unsigned int dispatch_sizes[3] = {int(ceil(MAX_PARTICLES/256)), 1, 1};
+    unsigned int dispatch_sizes[3] = {int(ceil(MAX_PARTICLES/32)), 1, 1};
     particlesComputeShader.setExecutionParameters(dispatch_sizes, GL_SHADER_STORAGE_BARRIER_BIT);
     particlesTrailComputeShader.setExecutionParameters(dispatch_sizes, GL_SHADER_STORAGE_BARRIER_BIT);
     
@@ -274,7 +274,7 @@ int main()
         
         processInput(window, cam, deltaT*KEYBOARD_MOVE_SPEED);
         
-        glm::mat4 rotationMat = glm::rotate(glm::mat4(1.0f), glm::radians(frameCount*1.1f), glm::vec3(0.0f, 1.0f, 0.0f));
+        glm::mat4 rotationMat = glm::rotate(glm::mat4(1.0f), glm::radians(frameCount*0.0f), glm::vec3(0.0f, 1.0f, 0.0f));
         
         camInfo.projection = cam.getProjectionMatrix();
         camInfo.view = cam.getViewMatrix();

@@ -15,7 +15,7 @@ inline float clamp(float x, float min, float max){
     return x<min?min: x>max?max:x;
 }
 
-constexpr unsigned int MAX_PARTICLES = 128*256;
+constexpr unsigned int MAX_PARTICLES = 64*256;
 constexpr float DT_FACTOR  = .2f;
 
 constexpr int TRAIL_HISTORY_LENGTH = 2;

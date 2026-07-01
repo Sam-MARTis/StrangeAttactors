@@ -1263,6 +1263,7 @@ CMakeFiles/OpenGLProject.dir/src/aux.cpp.o
  /home/odin/Code/Strange-Attractors/include/constants.hpp
  /home/odin/Code/Strange-Attractors/include/display-objects.hpp
  /home/odin/Code/Strange-Attractors/include/glad/glad.h
+ /home/odin/Code/Strange-Attractors/include/particles.hpp
  /home/odin/Code/Strange-Attractors/include/stb_image.h
  /usr/include/GLFW/glfw3.h
  /usr/include/alloca.h
